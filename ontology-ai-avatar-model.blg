@@ -1,0 +1,15 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'ontology-ai-avatar-model.blg'
+[143] biber-MSWIN64:340> INFO - === 
+[193] Biber.pm:419> INFO - Reading 'ontology-ai-avatar-model.bcf'
+[323] Biber.pm:979> INFO - Found 1 citekeys in bib section 0
+[341] Biber.pm:4419> INFO - Processing section 0
+[361] Biber.pm:4610> INFO - Looking for bibtex file '../bibliography/bsc-sample.bib' for section 0
+[444] bibtex.pm:1713> INFO - LaTeX decoding ...
+[453] bibtex.pm:1519> INFO - Found BibTeX data source '../bibliography/bsc-sample.bib'
+[509] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[510] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[510] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[511] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[513] bbl.pm:660> INFO - Writing 'ontology-ai-avatar-model.bbl' with encoding 'UTF-8'
+[514] bbl.pm:763> INFO - Output to ontology-ai-avatar-model.bbl

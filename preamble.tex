@@ -1,0 +1,51 @@
+% Preamble for the thesis document
+% Contains all necessary packages and configurations
+
+% Document class and basic settings
+\documentclass[a4paper,11pt,oneside]{report}
+
+% Input encoding and language settings
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,top=3cm,bottom=3cm,left=3cm,right=3cm]{geometry}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{helvet}
+\usepackage[english]{babel}     % typography settings
+\usepackage{csquotes}          % Required by biblatex with babel
+\usepackage{url}               % URL formatting
+\usepackage[style=numeric,
+            language=english,
+            urldate=long,
+            doi=true,
+            url=true,
+            eprint=false]{biblatex}
+\usepackage{parskip}           % blank lines between paragraphs, no indent
+\usepackage[margin=1cm]{caption} % give long captions a margin
+\usepackage{booktabs}          % typesetting nice tables
+\usepackage[cache=false]{minted} % typesetting code nicely
+\usepackage[pdftex]{graphicx}  % include graphics, preferably pdf
+\usepackage{tikz}              % for drawing high-quality diagrams (e.g., LLM timeline)
+\usepackage[pdftex]{hyperref}  % many PDF options can be set here
+\pdfadjustspacing=1           % force LaTeX-like character spacing
+
+% Custom commands
+\newcommand{\mylastname}{Ephriam Tangiri}
+\newcommand{\myfirstname}{Kinlo}
+\newcommand{\mynumber}{30006363}
+\newcommand{\myname}{\myfirstname{} \mylastname{}}
+\newcommand{\mytitle}{Ontology-Enhance Contextual Reasoning for Large Language Models in STEM Education}
+\newcommand{\mysupervisor}{Prof. Dr. Fatahi Valilai, Omid}
+
+% PDF metadata
+\hypersetup{
+    pdfauthor = {\myname},
+    pdftitle = {\mytitle},
+    pdfkeywords = {ontology, LLM, STEM education, AI tutor},
+    colorlinks = true,
+    linkcolor = blue,
+    citecolor = blue,
+    urlcolor = blue,
+    breaklinks = true
+}
+
+% Add bibliography resources
+\addbibresource{bibliography.bib} 
