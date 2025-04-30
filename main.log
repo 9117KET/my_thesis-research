@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.3)  29 APR 2025 22:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.3)  30 APR 2025 11:26
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -911,8 +911,91 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip73
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 48.
-Package hyperref Info: Option `breaklinks' set `true' on input line 48.
+(C:\Users\kinlo\latex\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen294
+\pgfarrowlength=\dimen295
+\pgfarrowwidth=\dimen296
+\pgfarrowlinewidth=\dimen297
+)
+(C:\Users\kinlo\latex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarys
+hapes.code.tex
+File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\kinlo\latex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarys
+hapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\kinlo\latex\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometr
+ic.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\kinlo\latex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarys
+hapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\kinlo\latex\tex/generic/pgf/libraries/shapes\pgflibraryshapes.misc.co
+de.tex
+File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\kinlo\latex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarys
+hapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\kinlo\latex\tex/generic/pgf/libraries/shapes\pgflibraryshapes.symbols
+.code.tex
+File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\kinlo\latex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarys
+hapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\kinlo\latex\tex/generic/pgf/libraries/shapes\pgflibraryshapes.arrows.
+code.tex
+File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\kinlo\latex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarys
+hapes.callouts.code.tex
+(C:\Users\kinlo\latex\tex/generic/pgf/libraries/shapes\pgflibraryshapes.callout
+s.code.tex))
+(C:\Users\kinlo\latex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarys
+hapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\kinlo\latex\tex/generic/pgf/libraries/shapes\pgflibraryshapes.multipa
+rt.code.tex
+File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodepartlowerbox=\box72
+\pgfnodeparttwobox=\box73
+\pgfnodepartthreebox=\box74
+\pgfnodepartfourbox=\box75
+\pgfnodeparttwentybox=\box76
+\pgfnodepartnineteenbox=\box77
+\pgfnodeparteighteenbox=\box78
+\pgfnodepartseventeenbox=\box79
+\pgfnodepartsixteenbox=\box80
+\pgfnodepartfifteenbox=\box81
+\pgfnodepartfourteenbox=\box82
+\pgfnodepartthirteenbox=\box83
+\pgfnodeparttwelvebox=\box84
+\pgfnodepartelevenbox=\box85
+\pgfnodeparttenbox=\box86
+\pgfnodepartninebox=\box87
+\pgfnodeparteightbox=\box88
+\pgfnodepartsevenbox=\box89
+\pgfnodepartsixbox=\box90
+\pgfnodepartfivebox=\box91
+)))
+(C:\Users\kinlo\latex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryp
+ositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\kinlo\latex\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryf
+it.code.tex
+File: tikzlibraryfit.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 51.
+Package hyperref Info: Option `breaklinks' set `true' on input line 51.
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -920,8 +1003,7 @@ Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 7
 .
-
-(C:\Users\kinlo\latex\tex/latex/psnfss\ot1phv.fd
+ (C:\Users\kinlo\latex\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 ) (main.aux
 
@@ -1006,13 +1088,13 @@ Package caption Info: End \AtBeginDocument code.
 (C:\Users\kinlo\latex\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count466
-\scratchdimen=\dimen294
-\scratchbox=\box72
+\scratchdimen=\dimen298
+\scratchbox=\box92
 \nofMPsegments=\count467
 \nofMParguments=\count468
 \everyMPshowfont=\toks40
 \MPscratchCnt=\count469
-\MPscratchDim=\dimen295
+\MPscratchDim=\dimen299
 \MPnumerator=\count470
 \makeMPintoPDFobject=\count471
 \everyMPtoPDFconversion=\toks41
@@ -1133,13 +1215,23 @@ Overfull \hbox (11.64197pt too wide) in paragraph at lines 18--19
 ected com-po-nents de-signed to achieve
  []
 
+(figures/system_architecture.tex
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 54.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 54.
+)
+Overfull \hbox (46.5286pt too wide) in paragraph at lines 98--23
+ [][] 
+ []
+
 [10
 
-] [11] [12] [13]) (chapters/04_implementation.tex [14]
+] [11] [12] [13] [14]) (chapters/04_implementation.tex [15]
 Chapter 4.
-[15
+[16
 
-] [16] [17] [18]) (chapters/05_evaluation.tex [19]
+] [17] [18] [19]) (chapters/05_evaluation.tex [20]
 Chapter 5.
 
 Overfull \hbox (3.93446pt too wide) in paragraph at lines 8--9
@@ -1150,13 +1242,13 @@ ta-tive anal-y-sis. Our eval-u-a-tion method-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[20
+[21
 
 ]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[21] [22]) (chapters/06_conclusion.tex [23]
+[22] [23]) (chapters/06_conclusion.tex [24]
 Chapter 6.
 
 Overfull \hbox (1.23969pt too wide) in paragraph at lines 30--31
@@ -1164,9 +1256,9 @@ Overfull \hbox (1.23969pt too wide) in paragraph at lines 30--31
 ove-ment in stu-dent un-der-stand-ing of com-
  []
 
-[24
+[25
 
-] [25]) [26]
+] [26]) [27]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 30.
 
@@ -1176,13 +1268,13 @@ ity of Penn-syl-va-nia. \OT1/phv/m/sc/10.95 url\OT1/phv/m/n/10.95 : [][]$\OT1/c
 mtt/m/n/10.95 https : / / learninganalytics .
  []
 
-[27
+[28
 
-] [28] (chapters/A1_appendix.tex [29]
+] [29] (chapters/A1_appendix.tex [30]
 Appendix A.
-[30
+[31
 
-] [31] [32] [33] [34]) [35] (main.aux)
+] [32] [33] [34] [35]) [36] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -1206,20 +1298,20 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34103 strings out of 474479
- 687928 string characters out of 5754848
- 1944542 words of memory out of 5000000
- 55696 multiletter control sequences out of 15000+600000
- 588023 words of font info for 79 fonts, out of 8000000 for 9000
+ 36486 strings out of 474479
+ 755567 string characters out of 5754848
+ 1945542 words of memory out of 5000000
+ 58022 multiletter control sequences out of 15000+600000
+ 589177 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,10n,96p,679b,2313s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/kinlo/latex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/kin
 lo/latex/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/kinlo/latex/fonts/
 type1/urw/helvetic/uhvb8a.pfb><C:/Users/kinlo/latex/fonts/type1/urw/helvetic/uh
 vr8a.pfb><C:/Users/kinlo/latex/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (41 pages, 328268 bytes).
+Output written on main.pdf (42 pages, 332377 bytes).
 PDF statistics:
- 928 PDF objects out of 1000 (max. 8388607)
- 199 named destinations out of 1000 (max. 500000)
+ 932 PDF objects out of 1000 (max. 8388607)
+ 200 named destinations out of 1000 (max. 500000)
  858 words of extra memory for PDF output out of 10000 (max. 10000000)
 
