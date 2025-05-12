@@ -1,6 +1,17 @@
 \documentclass{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage{tikz}
+\usepackage{hyperref}
+
+% Define colours for hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    pdftitle={Ontology-Enhanced LLMs Presentation},
+    pdfpagemode=FullScreen
+}
 
 \usetheme{Madrid}
 \usecolortheme{default}
@@ -201,6 +212,7 @@ Phased development approach to create an ontology-enhanced LLM system for STEM e
         \item Physics ontology development (OWL/RDF)
         \item Concept relationships and prerequisites structure
         \item Context retrieval system implementation
+        \item Knowledge base integration
     \end{itemize}
     
     \item \textbf{Student Model}
@@ -232,7 +244,7 @@ Our ontology-enhanced LLM system combines structured knowledge with adaptive lea
 \column{0.48\textwidth}
 \textbf{Technical Stack}
 \begin{itemize}
-    \item Flask web framework 
+    \item Quart web framework (async)
     \item Claude LLM API integration
     \item OWL/RDF ontology framework
 \end{itemize}
@@ -446,7 +458,7 @@ All objects accelerate at the same rate regardless of mass (g = 9.8 m/s²).
 \frametitle{Conclusions \& Future Work}
 
 \begin{alertblock}{Research Contributions}
-Developed an ontology-enhanced LLM system that reduces hallucination rate by 75\% while revealing critical accuracy trade-offs
+This thesis demonstrates how ontology-enhanced LLMs can significantly reduce hallucinations while providing personalized STEM education through structured knowledge integration and adaptive learning techniques
 \end{alertblock}
 
 \begin{columns}
@@ -474,8 +486,22 @@ Developed an ontology-enhanced LLM system that reduces hallucination rate by 75\
 \end{columns}
 \end{frame}
 
-% Bibliography references are handled inline for simplicity
-% References are handled inline with citations throughout the presentation
-% This improves flow and reduces unnecessary complexity
+% Add bibliography section
+\section{References}
+\begin{frame}[allowframebreaks]
+\frametitle{References}
+\bibliographystyle{alpha}
+
+% Only cite relevant references
+\nocite{horrocks2024owl}
+\nocite{pallets2024quart}
+\nocite{rodriguez2024adaptive}
+\nocite{scibite2024ontologies}
+\nocite{wilson2024educational}
+\nocite{chen2024comparing}
+\nocite{rivera2024impact}
+
+\bibliography{../bibliography/bibliography}
+\end{frame}
 
 \end{document}
