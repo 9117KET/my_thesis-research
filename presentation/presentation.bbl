@@ -1,0 +1,246 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{HPSvH24}
+
+\bibitem[AI24]{mendel2024hypercubes}
+Mendel AI.
+\newblock Introduction to hypercubes: Ontology and reasoning engine.
+\newblock {\em Mendel AI Blog}, 2024.
+
+\bibitem[Ant24]{clib2024ontology}
+ACL Anthology.
+\newblock Computational linguistics and intelligent text processing.
+\newblock In {\em CICLing 2024}, 2024.
+
+\bibitem[ArX23]{arxiv2023llm}
+ArXiv.
+\newblock Language model analysis.
+\newblock {\em arXiv preprint}, 2023.
+
+\bibitem[ArX24]{arxiv2024ontology}
+ArXiv.
+\newblock Ontology-enhanced language models.
+\newblock {\em arXiv preprint}, 2024.
+
+\bibitem[Bio24]{biostrand2024mitigating}
+BioStrand.
+\newblock Mitigating {LLM} hallucinations.
+\newblock {\em BioStrand Blog}, 2024.
+
+\bibitem[Blo24]{caminao2024llms}
+Caminao Blog.
+\newblock {LLMs} hallucinations: Ontological shadows.
+\newblock {\em Caminao Blog}, 2024.
+
+\bibitem[CR24]{chen2024comparing}
+Wenxin Chen and Blake Roberts.
+\newblock Comparing evaluation methodologies for large language models in
+  educational settings.
+\newblock {\em Computers and Education: Artificial Intelligence}, 5:100073,
+  2024.
+
+\bibitem[CW24a]{ceur2024ontologies}
+CEUR-WS.
+\newblock Ontologies in modern computing.
+\newblock In {\em CEUR Workshop Proceedings}, 2024.
+
+\bibitem[CW24b]{ceur2024ontology}
+CEUR-WS.
+\newblock Ontology-based systems.
+\newblock In {\em CEUR Workshop Proceedings}, 2024.
+
+\bibitem[Das24]{das2024hallucination}
+A.~Das.
+\newblock How to reduce hallucination in large language model.
+\newblock {\em LinkedIn Pulse}, 2024.
+
+\bibitem[Gee24]{geeksforgeeks2024ontologies}
+GeeksforGeeks.
+\newblock Introduction to ontologies.
+\newblock {\em GeeksforGeeks}, 2024.
+
+\bibitem[Gra24]{medium2024hallucination}
+Research Graph.
+\newblock Hallucination in large language models.
+\newblock {\em Medium}, 2024.
+
+\bibitem[HPSvH24]{horrocks2024owl}
+Ian Horrocks, Peter~F. Patel-Schneider, and Frank van Harmelen.
+\newblock From {SHIQ} and {RDF} to {OWL}: The making of a web ontology
+  language.
+\newblock {\em Journal of Web Semantics}, 2024.
+
+\bibitem[HQC{\etalchar{+}}24]{huang2024survey}
+F.~Huang, Y.~Qu, L.~Chen, D.~Roth, and K.~C.~C. Chang.
+\newblock A survey of hallucination in large foundation models.
+\newblock {\em arXiv preprint}, 2404.04631, 2024.
+
+\bibitem[HS24]{hartl2024knowledge}
+T.~Hartl and F.~Santos.
+\newblock Repairing {LLM} responses with knowledge graph-based ontology checks.
+\newblock {\em arXiv preprint}, 2405.11706, 2024.
+
+\bibitem[IAC24]{iacis2024llm}
+IACIS.
+\newblock {LLM} systems in education.
+\newblock {\em Issues in Information Systems}, 2024.
+
+\bibitem[INE09]{ineer2009engineering}
+INEER.
+\newblock Engineering education papers.
+\newblock In {\em ICEE/iCEER 2009}, 2009.
+
+\bibitem[JLF23]{ji2023survey}
+Z.~Ji, N.~Lee, and R.~Frieske.
+\newblock Survey of hallucination in natural language generation.
+\newblock {\em ACM Computing Surveys}, 55(12):1--38, 2023.
+
+\bibitem[Jon24]{pallets2024quart}
+Philip Jones.
+\newblock Quart: An asyncio reimplementation of the flask web framework.
+\newblock {\em Pallets Projects}, 2024.
+
+\bibitem[Jou21]{sage2021stem}
+SAGE Journals.
+\newblock {STEM} education research.
+\newblock {\em Educational Researcher}, 2021.
+
+\bibitem[Jou24a]{sage2024ontological}
+SAGE Journals.
+\newblock Ontological frameworks in education.
+\newblock {\em SAGE Journals}, 2024.
+
+\bibitem[Jou24b]{sage2024stem}
+SAGE Journals.
+\newblock {STEM} education perspectives.
+\newblock {\em SAGE Journals}, 2024.
+
+\bibitem[Kno24]{enterprise2024ontologies}
+Enterprise Knowledge.
+\newblock The role of ontologies with {LLMs}.
+\newblock {\em Enterprise Knowledge Insights}, 2024.
+
+\bibitem[KP24]{kim2024assessment}
+Soo-Jin Kim and Vikram Patel.
+\newblock Assessment frameworks for ai-enhanced educational systems.
+\newblock {\em Journal of Learning Analytics}, 11(1):45--67, 2024.
+
+\bibitem[Lib20]{acm2020learning}
+ACM~Digital Library.
+\newblock Technology enhanced learning.
+\newblock {\em Education and Information Technologies}, 2020.
+
+\bibitem[LJ24]{lewis2024neuro}
+Marcus Lewis and Rachel~T. Johnson.
+\newblock Neuro-symbolic integration in educational ai: Current challenges and
+  future prospects.
+\newblock {\em AI and Education}, 3(2):189--214, 2024.
+
+\bibitem[MDP24]{mdpi2024applications}
+MDPI.
+\newblock Applications of {AI} in education.
+\newblock {\em Applied Sciences}, 2024.
+
+\bibitem[NK23]{nananukul2023halo}
+N.~Nananukul and M.~Kejriwal.
+\newblock {HALO}: An ontology for representing and categorizing hallucinations
+  in large language models.
+\newblock {\em arXiv preprint}, 2312.05209, 2023.
+
+\bibitem[Ope24]{openreview2024llm}
+OpenReview.
+\newblock Language model enhancement through ontological integration.
+\newblock {\em OpenReview}, 2024.
+
+\bibitem[RDK24]{rodriguez2024adaptive}
+Carlos Alario-Hoyos Rodriguez and Carlos Delgado~Kloos.
+\newblock Improving the learning-teaching process through adaptive learning
+  systems.
+\newblock {\em Smart Learning Environments}, 11(13), 2024.
+
+\bibitem[Res18]{researchgate2018ontologies}
+ResearchGate.
+\newblock Three ontologies of {STEM} education.
+\newblock {\em Research in Science Education}, 2018.
+
+\bibitem[RH24]{rivera2024impact}
+John Rivera and Elena Hernandez.
+\newblock Impact assessment of ai tutors on student learning outcomes.
+\newblock {\em International Journal of Artificial Intelligence in Education},
+  34(2):215--239, 2024.
+
+\bibitem[Sci24a]{scibite2024ontologies}
+SciBite.
+\newblock Are ontologies still relevant in the age of {LLMs}?
+\newblock {\em SciBite Knowledge Hub}, 2024.
+
+\bibitem[Sci24b]{earley2024ontology}
+Earley~Information Science.
+\newblock Ontology: Key to unlocking the power of {AI}.
+\newblock {\em Earley Insights}, 2024.
+
+\bibitem[Sci24c]{earley2024role}
+Earley~Information Science.
+\newblock Role of ontology and information architecture in {AI}.
+\newblock {\em Earley Insights}, 2024.
+
+\bibitem[SDWS24]{su2024confabulation}
+P.~Sui, E.~Duede, S.~Wu, and R.~So.
+\newblock Confabulation: The surprising value of large language model
+  hallucinations.
+\newblock {\em Proceedings of the 62nd Annual Meeting of the Association for
+  Computational Linguistics}, pages 14274--14284, 2024.
+
+\bibitem[Sha24]{sharma2024synergizing}
+K.~Sharma.
+\newblock Synergizing ontologies and large language models.
+\newblock {\em LinkedIn Pulse}, 2024.
+
+\bibitem[Spr20]{springer2020learning}
+Springer.
+\newblock Smart learning environments.
+\newblock {\em Smart Learning Environments}, 2020.
+
+\bibitem[Tab23]{tabor2023ontology}
+F.~Tabor.
+\newblock Introduction to ontologies and language models.
+\newblock {\em Personal Blog}, 2023.
+
+\bibitem[Tak24]{doubletaken2024llm}
+Double Taken.
+\newblock {LLM} reasoning vs logical ontology graph reasoning.
+\newblock {\em Medium}, 2024.
+
+\bibitem[VIW{\etalchar{+}}24]{vu2024freshllms}
+T.~Vu, M.~Iyyer, X.~Wang, N.~Constant, J.~Wei, C.~Tar, Y.-H. Sung, D.~Zhou,
+  Q.~Le, and T.~Luong.
+\newblock Freshllms: Refreshing large language models with search engine
+  augmentation.
+\newblock {\em Findings of the Association for Computational Linguistics: ACL
+  2024}, pages 13697--13720, 2024.
+
+\bibitem[WM24]{wilson2024educational}
+Daniel~R. Wilson and Maria Martinez.
+\newblock Educational technology assessment frameworks: A systematic review.
+\newblock {\em Journal of Educational Technology Systems}, 52(3):281--305,
+  2024.
+
+\bibitem[ZJ25]{zuo2025medhallbench}
+K.~Zuo and Y.~Jiang.
+\newblock Medhallbench: A new benchmark for assessing hallucination in medical
+  large language models.
+\newblock {\em arXiv preprint}, 2412.18947, 2025.
+
+\bibitem[ZL24]{zhang2024survey}
+H.~Zhang and L.~Li.
+\newblock A survey on hallucination in large language models: Principles,
+  taxonomy, challenges, and open questions.
+\newblock {\em arXiv preprint}, 2401.11817, 2024.
+
+\bibitem[ZT24]{zhang2024future}
+Mei Zhang and Kevin Thompson.
+\newblock Future directions in ai for education: A systematic review of
+  emerging trends.
+\newblock {\em Educational Technology Research and Development}, 72(1):96--128,
+  2024.
+
+\end{thebibliography}

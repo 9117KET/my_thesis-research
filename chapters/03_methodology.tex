@@ -3,24 +3,32 @@
 \label{chap:methodology}
 
 \section{Research Approach}
-This chapter presents our systematic approach to developing an ontology-enhanced LLM system for STEM education. Our methodology addresses the following research objectives:
+\label{sec:research-approach}
+This chapter presents our systematic approach to developing an ontology-enhanced LLM system for STEM education. Our methodology addresses the critical challenge of AI hallucination in educational applications through the following research objectives:
 
 \begin{itemize}
-    \item Integration of ontological knowledge with LLM reasoning
-    \item Development of mechanisms to prevent hallucinations
-    \item Enhancement of contextual understanding in STEM education
-    \item Creation of an adaptive, personalized learning system
+    \item Integration of domain-specific ontologies (OWL, RDF, SPARQL) with LLM reasoning \cite{doubletaken2024llm}
+    \item Development of mechanisms for reliable AI-powered tutoring \cite{ji2023survey}
+    \item Enhancement of contextual understanding in STEM education through structured knowledge representation
+    \item Creation of an adaptive, personalized learning system with avatar-based engagement
 \end{itemize}
+
+The research follows a phased development approach focusing on three key areas:
+\begin{enumerate}
+    \item \textbf{Core Functionality:} Environment setup, API authentication, system prompt structure, and basic question-answering functionality
+    \item \textbf{Knowledge Representation:} Physics concepts, laws, relationships, prerequisites structures, and context retrieval system
+    \item \textbf{Student Model Implementation:} Concept exposure tracking, knowledge level monitoring, and learning path generation
+\end{enumerate}
 
 \section{System Architecture}
 \label{sec:system-architecture}
 
-The system architecture comprises several interconnected components designed to achieve our research objectives:
+The system architecture comprises several interconnected components organized into distinct layers:
 
 \begin{figure}[htbp]
     \centering
     \input{figures/system_architecture}
-    \caption{High-level System Architecture showing the four main layers (Client, API, Core Processing, and Data) and their interconnected components. The arrows indicate data flow and component interactions within and between layers.}
+    \caption{High-level System Architecture showing the integration of ontology-driven knowledge models with Claude 3 LLM for enhanced STEM education.}
     \label{fig:system-architecture}
 \end{figure}
 
@@ -30,222 +38,120 @@ The system architecture comprises several interconnected components designed to 
 The system consists of the following key components:
 
 \begin{itemize}
-    \item \textbf{Client Browser:} 
+    \item \textbf{Backend (API Layer):} 
         \begin{itemize}
-            \item User interface components (HTML/CSS with Bootstrap)
-            \item Dynamic interaction handling (JavaScript)
-            \item Avatar Renderer for 3D models and animations
-            \item Real-time feedback visualization
+            \item Quart (async Flask-compatible) server
+            \item Modular API endpoints and route definitions
+            \item JWT session management
+            \item Integration with Claude 3 LLM and ontology modules
         \end{itemize}
     
-    \item \textbf{Backend Server:} 
+    \item \textbf{LLM Integration:} \cite{vu2024freshllms}
         \begin{itemize}
-            \item Quart Web Server implementation
-            \item RESTful API endpoints
-            \item Robust session management
-            \item Asynchronous request handling
+            \item Adaptive tutoring logic
+            \item Student model implementation
+            \item Context-aware answer generation
+            \item Response validation against ontology
         \end{itemize}
     
-    \item \textbf{Tutoring System Core:} 
+    \item \textbf{Ontology Layer:} \cite{mendel2024hypercubes}
         \begin{itemize}
-            \item Claude Tutor component for LLM integration
-            \item Prompt management and optimization
-            \item Student Model for knowledge tracking
-            \item Adaptive learning path generation
-        \end{itemize}
-    
-    \item \textbf{Domain Knowledge:} 
-        \begin{itemize}
-            \item OWL-based Physics Ontology
-            \item Comprehensive Knowledge Base
-            \item Concept relationship mapping
-            \item Prerequisites and dependencies
-        \end{itemize}
-    
-    \item \textbf{Persistent Storage:} 
-        \begin{itemize}
-            \item JSON-based student data management
-            \item In-memory session handling
-            \item Efficient data retrieval mechanisms
-            \item Backup and recovery systems
-        \end{itemize}
-\end{itemize}
-
-\section{Data Flow Architecture}
-\label{sec:data-flow}
-
-The system implements several sophisticated data flows designed to ensure efficient information processing and delivery:
-
-\subsection{Primary Data Flows}
-\label{subsec:primary-flows}
-
-\begin{enumerate}
-    \item \textbf{User Interaction Flow:}
-        \begin{itemize}
-            \item Frontend interface question handling
-            \item AJAX request processing
-            \item Real-time response display
-            \item Student model visualization updates
-        \end{itemize}
-    
-    \item \textbf{Backend Processing Flow:}
-        \begin{itemize}
-            \item API request routing through Quart
-            \item Session instance management
-            \item Response generation and formatting
-            \item Error handling and recovery
-        \end{itemize}
-    
-    \item \textbf{Tutoring System Flow:}
-        \begin{itemize}
-            \item Context analysis and knowledge retrieval
-            \item Student model updates
-            \item Adaptive response generation
-            \item Learning progress tracking
-        \end{itemize}
-    
-    \item \textbf{Knowledge Graph Flow:}
-        \begin{itemize}
-            \item Structured physics knowledge delivery
-            \item Learning progress monitoring
-            \item Concept relationship navigation
-            \item Prerequisite verification
-        \end{itemize}
-    
-    \item \textbf{Student Model Flow:}
-        \begin{itemize}
-            \item Concept exposure tracking
-            \item Understanding level assessment
-            \item Knowledge gap identification
-            \item Personalized path generation
-        \end{itemize}
-\end{enumerate}
-
-\section{Technology Stack}
-\label{sec:tech-stack}
-
-The system integrates modern technologies to ensure robust performance and scalability:
-
-\begin{itemize}
-    \item \textbf{Frontend Development:}
-        \begin{itemize}
-            \item HTML5/CSS3 with Bootstrap 5
-            \item Modern JavaScript (ES6+)
-            \item Responsive design principles
-            \item Progressive enhancement
-        \end{itemize}
-    
-    \item \textbf{Backend Framework:}
-        \begin{itemize}
-            \item Quart async Python framework
-            \item RESTful API architecture
-            \item WebSocket support
-            \item Efficient request handling
-        \end{itemize}
-    
-    \item \textbf{Natural Language Processing:}
-        \begin{itemize}
-            \item Claude 3 API integration
-            \item Anthropic client implementation
-            \item Context window optimization
-            \item Response quality assurance
-        \end{itemize}
-    
-    \item \textbf{Knowledge Representation:}
-        \begin{itemize}
-            \item Owlready2 framework
-            \item OWL/RDF technologies
-            \item SPARQL query optimization
+            \item Physics domain ontology schemas
+            \item Validation mechanisms
+            \item Knowledge representation structures
             \item Semantic reasoning capabilities
         \end{itemize}
     
-    \item \textbf{Data Management:}
+    \item \textbf{Frontend Interface:} 
         \begin{itemize}
-            \item JSON-based storage
-            \item In-memory caching
-            \item Session state management
-            \item Data persistence strategies
+            \item Avatar-based web UI
+            \item Interactive tutoring interface
+            \item Real-time feedback visualization
+            \item Student progress tracking
         \end{itemize}
 \end{itemize}
 
-\section{Implementation Strategy}
-\label{sec:implementation}
+\section{Project Structure}
+\label{sec:project-structure}
 
-Our implementation follows an iterative, phase-based approach:
+The implementation follows a modular organization:
 
-\subsection{Development Phases}
-\label{subsec:dev-phases}
+\begin{itemize}
+    \item \textbf{/api} 
+        \begin{itemize}
+            \item Routes and handler definitions
+            \item Utility functions
+            \item Main API application
+            \item Vercel serverless handler
+        \end{itemize}
+    
+    \item \textbf{/llm\_integration}
+        \begin{itemize}
+            \item LLM integration components
+            \item Student modeling logic
+            \item Context management
+            \item Response generation
+        \end{itemize}
+    
+    \item \textbf{/ontology}
+        \begin{itemize}
+            \item Physics ontology schemas
+            \item Validation mechanisms
+            \item Knowledge base structures
+            \item Reasoning components
+        \end{itemize}
+    
+    \item \textbf{/static}
+        \begin{itemize}
+            \item Frontend assets (HTML, CSS, JS)
+            \item Avatar interface components
+            \item UI/UX elements
+            \item Interactive features
+        \end{itemize}
+\end{itemize}
+
+\section{Evaluation Metrics}
+\label{sec:evaluation-metrics}
+
+The system evaluation is conducted across three primary dimensions \cite{huang2024survey}:
 
 \begin{enumerate}
-    \item \textbf{Phase 1: Foundation}
+    \item \textbf{System Performance}
         \begin{itemize}
-            \item Environment setup and configuration
-            \item API authentication implementation
-            \item Basic system prompt structure
-            \item Core functionality testing
+            \item Response accuracy measurement
+            \item Personalization effectiveness
+            \item System scalability assessment
+            \item Integration reliability
         \end{itemize}
     
-    \item \textbf{Phase 2: Knowledge Integration}
+    \item \textbf{User Experience}
         \begin{itemize}
-            \item Ontology development and validation
-            \item Knowledge base population
-            \item Context retrieval system
-            \item Semantic reasoning implementation
+            \item Interaction quality metrics
+            \item Learning engagement levels
+            \item Knowledge retention rates
+            \item Avatar interaction effectiveness
         \end{itemize}
     
-    \item \textbf{Phase 3: Adaptive Learning}
+    \item \textbf{Technical Evaluation}
         \begin{itemize}
-            \item Student model development
-            \item Progress tracking mechanisms
-            \item Personalization algorithms
-            \item Learning path optimization
+            \item API integration performance
+            \item Knowledge representation accuracy
+            \item Data management efficiency
+            \item Response validation success
         \end{itemize}
 \end{enumerate}
 
-\section{Quality Assurance}
-\label{sec:quality}
+\section{Research Contributions}
+\label{sec:research-contributions}
 
-To ensure system reliability and effectiveness:
+The key contributions of this research include:
 
-\begin{itemize}
-    \item \textbf{Testing Strategies:}
-        \begin{itemize}
-            \item Unit testing of components
-            \item Integration testing of flows
-            \item Performance benchmarking
-            \item User acceptance testing
-        \end{itemize}
-    
-    \item \textbf{Monitoring and Logging:}
-        \begin{itemize}
-            \item System health monitoring
-            \item Error tracking and reporting
-            \item Performance metrics collection
-            \item Usage analytics
-        \end{itemize}
-\end{itemize}
-
-\section{Evaluation Framework}
-\label{sec:evaluation-framework}
-
-Our evaluation approach encompasses:
-
-\begin{itemize}
-    \item \textbf{Performance Metrics:}
-        \begin{itemize}
-            \item Response accuracy assessment
-            \item System latency measurement
-            \item Resource utilization tracking
-            \item Scalability testing
-        \end{itemize}
-    
-    \item \textbf{Educational Impact:}
-        \begin{itemize}
-            \item Learning outcome measurement
-            \item Student engagement analysis
-            \item Knowledge retention assessment
-            \item Personalization effectiveness
-        \end{itemize}
-\end{itemize}
+\begin{enumerate}
+    \item \textbf{Reduced Hallucination:} Integration of structured domain knowledge to enhance AI accuracy \cite{su2024confabulation}
+    \item \textbf{Personalized Tutoring:} Adaptive responses based on comprehensive student modeling
+    \item \textbf{Scalable Solution:} Architecture supporting one-on-one tutoring at scale
+    \item \textbf{Interactive Learning:} Avatar-based interface for enhanced student engagement
+    \item \textbf{Knowledge Verification:} Systematic validation of AI responses against domain ontology \cite{scibite2024ontologies}
+\end{enumerate}
 
 This methodology provides a comprehensive framework for developing and evaluating our ontology-enhanced LLM system, ensuring alignment with our research objectives and educational goals. 

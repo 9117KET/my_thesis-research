@@ -1,6 +1,8 @@
-% Appendix A: Additional Materials
-\chapter{Additional Materials}
-\label{app:additional}
+% Appendix A: Technical Supplementary Materials
+\chapter{Technical Supplementary Materials}
+\label{app:technical-materials}
+
+This appendix provides supplementary technical information to support the research presented in the main thesis. The materials included here offer additional details on the ontology structure, system implementation, evaluation methodology, and other technical aspects that would interrupt the flow of the main chapters but are valuable for researchers seeking to replicate or build upon this work.
 
 \section{Ontology Structure Details}
 \label{sec:ontology-structure}
@@ -26,7 +28,6 @@ The ontology's hierarchical structure for physics concepts:
                     \item Work and Power
                 \end{itemize}
         \end{itemize}
-    % Add more physics concept hierarchies as needed
 \end{itemize}
 
 \subsection{Relationship Types}
@@ -44,12 +45,6 @@ Key relationships defined in the ontology:
             \item is\_related\_to
             \item applies\_to
             \item demonstrates
-        \end{itemize}
-    \item \textbf{Educational Relations}
-        \begin{itemize}
-            \item has\_example
-            \item has\_exercise
-            \item has\_misconception
         \end{itemize}
 \end{itemize}
 
@@ -73,133 +68,6 @@ Key relationships defined in the ontology:
             \item Authentication services
             \item Caching mechanisms
         \end{itemize}
-    
-    \item \textbf{Knowledge Integration Layer}
-        \begin{itemize}
-            \item Ontology query processors
-            \item Context management system
-            \item Response verification modules
-            \item Knowledge graph interfaces
-        \end{itemize}
-\end{itemize}
-
-\section{API Documentation}
-\label{sec:api-documentation}
-
-\subsection{REST Endpoints}
-\begin{itemize}
-    \item \textbf{User Management}
-        \begin{verbatim}
-        POST /api/v1/users/register
-        POST /api/v1/users/login
-        GET /api/v1/users/profile
-        \end{verbatim}
-    
-    \item \textbf{Learning Sessions}
-        \begin{verbatim}
-        POST /api/v1/sessions/start
-        PUT /api/v1/sessions/{id}/update
-        GET /api/v1/sessions/{id}/status
-        \end{verbatim}
-    
-    \item \textbf{Knowledge Queries}
-        \begin{verbatim}
-        POST /api/v1/knowledge/query
-        GET /api/v1/concepts/{id}
-        GET /api/v1/relationships/{type}
-        \end{verbatim}
-\end{itemize}
-
-\section{Example Interactions}
-\label{sec:example-interactions}
-
-\subsection{Sample Dialogue}
-Example of system-student interaction for Newton's First Law:
-
-\begin{verbatim}
-Student: "Can you explain Newton's First Law?"
-
-System: [Accessing ontology relationships]
-"Newton's First Law, also known as the Law of Inertia, 
-states that an object will remain at rest or in uniform 
-motion unless acted upon by an external force. Let me 
-break this down with an example..."
-
-Student: "How does this relate to friction?"
-
-System: [Linking concepts through ontology]
-"Excellent question! Friction is actually one of the most 
-common external forces that we experience..."
-\end{verbatim}
-
-\section{Performance Metrics}
-\label{sec:performance-metrics}
-
-\subsection{Response Time Analysis}
-\begin{table}[h]
-    \centering
-    \caption{System Response Time Metrics}
-    \label{tab:response-times}
-    \begin{tabular}{lcc}
-        \toprule
-        \textbf{Operation} & \textbf{Average Time (ms)} & \textbf{95th Percentile (ms)} \\
-        \midrule
-        Ontology Query & [value] & [value] \\
-        LLM Processing & [value] & [value] \\
-        Total Response & [value] & [value] \\
-        \bottomrule
-    \end{tabular}
-\end{table}
-
-\section{Implementation Code Samples}
-\label{sec:code-samples}
-
-\subsection{Ontology Query Example}
-\begin{verbatim}
-# SPARQL query example for concept relationships
-PREFIX phys: <http://example.org/physics#>
-SELECT ?related_concept
-WHERE {
-    phys:NewtonsFirstLaw phys:isRelatedTo ?related_concept .
-}
-\end{verbatim}
-
-\subsection{Context Management Example}
-\begin{verbatim}
-async def manage_context(session_id: str, 
-                        current_concept: str) -> dict:
-    """
-    Manages conversation context using ontology
-    relationships and session history.
-    """
-    # Implementation details...
-\end{verbatim}
-
-\section{User Study Materials}
-\label{sec:user-study}
-
-\subsection{Study Protocol}
-\begin{itemize}
-    \item \textbf{Participant Selection}
-        \begin{itemize}
-            \item Selection criteria
-            \item Demographics
-            \item Prior knowledge assessment
-        \end{itemize}
-    
-    \item \textbf{Test Scenarios}
-        \begin{itemize}
-            \item Learning tasks
-            \item Interaction patterns
-            \item Assessment methods
-        \end{itemize}
-    
-    \item \textbf{Data Collection}
-        \begin{itemize}
-            \item Performance metrics
-            \item User feedback
-            \item System logs
-        \end{itemize}
 \end{itemize}
 
 \section{Future Extensions}
@@ -220,112 +88,39 @@ async def manage_context(session_id: str,
             \item Predictive modeling
             \item Personalization algorithms
         \end{itemize}
-    
-    \item \textbf{Integration Capabilities}
-        \begin{itemize}
-            \item LMS integration
-            \item Mobile application
-            \item Offline mode support
-        \end{itemize}
 \end{itemize}
 
 \section{Related Research Articles}
 \label{sec:related-research}
 
+This section provides supplementary references to research articles relevant to the research presented in this thesis:
+
 \subsection{AI in Education and Learning Analytics}
 \begin{itemize}
-    \item \textbf{JeepyTA Study} \cite{jeepyta2024}
+    \item \textbf{JeepyTA Study}
         \begin{itemize}
             \item Examines the effectiveness of GPT-based teaching assistants
             \item Focuses on automated feedback and student engagement
             \item Demonstrates significant improvements in learning outcomes
         \end{itemize}
     
-    \item \textbf{Meta's LLaMA in Education} \cite{meta2024}
+    \item \textbf{Meta's LLaMA in Education}
         \begin{itemize}
             \item Showcases advanced mathematical capabilities in educational contexts
             \item Highlights real-world applications in teaching and learning
             \item Demonstrates improved accuracy in complex problem-solving
         \end{itemize}
-    
-    \item \textbf{Google Gemini in Education} \cite{gemini2024}
-        \begin{itemize}
-            \item Introduces LearnLM family of models for education
-            \item Focuses on active, personalized learning experiences
-            \item Emphasizes efficient technology integration in classrooms
-        \end{itemize}
 \end{itemize}
 
-\subsection{AI in Corporate Training and Professional Development}
-\begin{itemize}
-    \item \textbf{Corporate Training Applications} \cite{corporate2024}
-        \begin{itemize}
-            \item Explores scalable AI solutions for corporate learning
-            \item Highlights cost-effectiveness and personalization
-            \item Demonstrates improved employee engagement and retention
-        \end{itemize}
-    
-    \item \textbf{ESWC Conference Paper} \cite{eswc2024}
-        \begin{itemize}
-            \item Presents core elements of AI-driven learning systems
-            \item Focuses on continuous improvement cycles
-            \item Emphasizes data-driven decision making in education
-        \end{itemize}
-\end{itemize}
+\subsection{Technical Terminology Glossary}
+\label{sec:technical-glossary}
 
-\subsection{AI Tutoring Systems and Student Performance}
-\begin{itemize}
-    \item \textbf{Khanmigo AI Tutor} \cite{khanmigo2024}
-        \begin{itemize}
-            \item Details successful pilot program implementation
-            \item Shows positive impact on student learning
-            \item Demonstrates effective integration of AI in traditional education
-        \end{itemize}
-    
-    \item \textbf{AI Teaching Assistants Study} \cite{govtech2024}
-        \begin{itemize}
-            \item Reports significant grade improvements with AI assistance
-            \item Focuses on instructional outreach effectiveness
-            \item Covers applications in political science and economics
-        \end{itemize}
-\end{itemize}
+This section provides definitions for technical terms used throughout the thesis:
 
-\subsection{Technical Implementations and Methodologies}
-\begin{itemize}
-    \item \textbf{Automated Content Generation} \cite{arxiv2403}
-        \begin{itemize}
-            \item Presents novel approach to content generation
-            \item Demonstrates system capabilities in educational contexts
-            \item Focuses on quality and accuracy of generated materials
-        \end{itemize}
+\begin{description}
+    \item[OWL (Web Ontology Language)] A semantic web language designed to represent rich and complex knowledge about things, groups of things, and relations between things.
     
-    \item \textbf{LLM Integration Study} \cite{arxiv2405}
-        \begin{itemize}
-            \item Explores integration of large language models in education
-            \item Emphasizes precise and tailored learning guidance
-            \item Presents innovative approaches to personalized learning
-        \end{itemize}
+    \item[RDF (Resource Description Framework)] A standard model for data interchange on the Web that extends the linking structure of the Web.
     
-    \item \textbf{System Identification Research} \cite{arxiv2412}
-        \begin{itemize}
-            \item Details system identification and appending mechanisms
-            \item Focuses on automated learning path optimization
-            \item Presents novel approaches to educational content delivery
-        \end{itemize}
-    
-    \item \textbf{Educational Concept Ontology} \cite{arxiv2407}
-        \begin{itemize}
-            \item Presents comprehensive ontology for educational concepts
-            \item Details integration with other system components
-            \item Emphasizes structured knowledge representation
-        \end{itemize}
-    
-    \item \textbf{Latest Research} \cite{arxiv2502}
-        \begin{itemize}
-            \item Presents cutting-edge developments in AI education
-            \item Focuses on recent advancements and methodologies
-            \item Highlights emerging trends in educational technology
-        \end{itemize}
-\end{itemize}
-
-% Note: Replace [value] placeholders with actual performance metrics from your system 
+    \item[SPARQL] A semantic query language for databases, able to retrieve and manipulate data stored in RDF format.
+\end{description}

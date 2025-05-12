@@ -8,14 +8,14 @@
 \section{Historical Context and Evolution}
 
 % Explain the origins and evolution of LLMs and ontologies in education, without repeating the introduction.
-The intersection of artificial intelligence and education has evolved rapidly, with Large Language Models (LLMs) and ontological knowledge representation emerging as transformative technologies. Early educational technologies focused on rule-based systems and static content delivery. The advancement of LLMs enabled dynamic, context-aware interactions, while ontologies brought structured, machine-interpretable knowledge to educational platforms \cite{funk2023neuro}.
+The intersection of artificial intelligence and education has evolved rapidly, with Large Language Models (LLMs) and ontological knowledge representation emerging as transformative technologies. Early educational technologies focused on rule-based systems and static content delivery. The advancement of LLMs enabled dynamic, context-aware interactions, while ontologies brought structured, machine-interpretable knowledge to educational platforms \cite{ji2023survey, zhang2024survey, doubletaken2024llm}.
 
 % Real-life analogy: Think of LLMs as talented tutors who can answer any question, and ontologies as the curriculum guide ensuring the tutor stays on track.
 
 \section{Significance and Motivation}
 
 % WHY: Why is this research important now?
-Despite LLMs' promise, their tendency to hallucinate that is to generate plausible but incorrect information, poses a critical barrier in high-stakes domains like STEM education \cite{zhang2024survey, ji2023survey}. Ontologies offer a way to constrain and verify LLM outputs, but integrating these approaches remains an open challenge. Addressing this gap is essential for building trustworthy, adaptive educational systems.
+Despite LLMs' promise, their tendency to hallucinate, that is to generate plausible but incorrect information, poses a critical barrier in high-stakes domains like STEM education \cite{ji2023survey, zhang2024survey, nananukul2023halo}. Ontologies offer a way to constrain and verify LLM outputs, but integrating these approaches remains an open challenge \cite{hartl2024knowledge, enterprise2024ontologies}. Addressing this gap is essential for building trustworthy, adaptive educational systems.
 
 % Key takeaway: The reliability of AI in education hinges on bridging the gap between flexible language models and structured domain knowledge.
 
@@ -23,13 +23,13 @@ Despite LLMs' promise, their tendency to hallucinate that is to generate plausib
 
 % WHAT: What has been done before? How does it relate to your work?
 \subsection{LLMs in Education}
-Recent studies highlight LLMs' ability to personalize learning, generate content, and provide instant feedback. However, their lack of domain knowledge leads to factual errors, especially in technical subjects \cite{huang2024survey, su2024confabulation}.
+Recent studies highlight LLMs' ability to personalize learning, generate content, and provide instant feedback. However, their lack of domain knowledge leads to factual errors, especially in technical subjects \cite{ji2023survey, su2024confabulation, huang2024survey}.
 
 \subsection{Ontologies in Educational Technology}
-Ontologies have been used to structure curricula, model learner knowledge, and support adaptive learning paths \cite{liu2024ontology, wiley2024stem}. They enable explicit representation of concepts and relationships, supporting automated reasoning and assessment.
+Ontologies have been used to structure curricula, model learner knowledge, and support adaptive learning paths \cite{sage2024ontological, medium2024hallucination, sage2021stem}. They enable explicit representation of concepts and relationships, supporting automated reasoning and assessment.
 
 \subsection{Hybrid and Knowledge-Enhanced Systems}
-Emerging research explores combining LLMs with ontologies or knowledge graphs to improve accuracy and reasoning \cite{hartl2024knowledge, funk2023neuro, arxiv2024ontology}. These hybrid systems show promise in reducing hallucinations and supporting context-aware responses, but practical, scalable solutions for real-time educational use are still lacking.
+Emerging research explores combining LLMs with ontologies or knowledge graphs to improve accuracy and reasoning \cite{hartl2024knowledge, scibite2024ontologies, nananukul2023halo}. These hybrid systems show promise in reducing hallucinations and supporting context-aware responses, but practical, scalable solutions for real-time educational use are still lacking.
 
 % Funnel structure: Start broad (AI in education), then focus on LLMs, ontologies, and finally their integration.
 
@@ -73,7 +73,7 @@ Large Language Models represent a significant advancement in artificial intellig
     \item Multi-turn conversations and reasoning
 \end{itemize}
 
-Recent developments in hybrid alignment training \cite{wang2024hybrid} and search engine augmentation \cite{vu2024freshllms} have further enhanced these capabilities.
+Recent developments in hybrid alignment training \cite{openreview2024llm} and search engine augmentation \cite{vu2024freshllms} have further enhanced these capabilities.
 
 % --- BEGIN: LLM Timeline TikZ Diagram ---
 % This TikZ diagram visually summarizes the historical evolution of Large Language Models (LLMs) in education.
@@ -176,7 +176,7 @@ Ontologies provide a formal, structured representation of knowledge within a dom
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.8\textwidth]{figures/diagrams/ExampleOntology.png}
-    \caption{Sample ontology structure for STEM education, focusing on mathematical functions and their sub-concepts. Adapted from \cite{hare2024ontology}. This diagram demonstrates how ontologies can organize and relate key concepts, supporting adaptive and personalized learning in AI-driven educational systems.}
+    \caption{Sample ontology structure for STEM education, focusing on mathematical functions and their sub-concepts. Adapted from \cite{mendel2024hypercubes}. This diagram demonstrates how ontologies can organize and relate key concepts, supporting adaptive and personalized learning in AI-driven educational systems.}
     \label{fig:ontology-math-functions}
 \end{figure}
 % --- END: Example Ontology Structure Figure ---
@@ -194,9 +194,7 @@ This section defines key terms used throughout this thesis:
     \item \textbf{Large Language Model (LLM):} An advanced AI model trained on extensive textual data, capable of generating human-like text, understanding context, and performing complex reasoning tasks.
     
     \item \textbf{Virtual Environment:} Digitally simulated spaces designed to mimic real-world scenarios, supporting user immersion and interaction through various sensory elements.
-    
-    \item \textbf{Digital Avatars:} Virtual representations of users or characters within digital environments, embodying human-like traits to enhance interaction quality.
-    
+     
     \item \textbf{Ontology-driven Integration:} The process of using structured ontologies to unify different data sources or systems, ensuring coherent communication and consistency across applications.
     
     \item \textbf{AI-Human Interaction:} The exchange of information between AI systems and human users, relying on clear understanding and context-aware responses.
@@ -205,4 +203,3 @@ This section defines key terms used throughout this thesis:
     
     \item \textbf{Knowledge Graph:} A structured data representation organizing information into interconnected nodes and edges, enabling effective visualization and interpretation of complex relationships.
 \end{itemize}
-

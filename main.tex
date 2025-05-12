@@ -10,9 +10,8 @@
   \input{./chapters/00_titlepage}
   \input{./chapters/00_declaration}
   \input{./chapters/00_abstract}
-    \tableofcontents
-  % \listoffigures
-  % \listoftables
+  \clearpage
+  \tableofcontents
 
   % Main content
   \clearpage
@@ -27,9 +26,10 @@
   \input{./chapters/06_conclusion}
 
   % Back matter
-  \printbibliography[heading=bibintoc]
+  \clearpage
+  \printbibliography[heading=bibintoc,title={Bibliography}]
   
   % Appendices
   \appendix
   \input{./chapters/A1_appendix}
-\end{document} 
+\end{document}

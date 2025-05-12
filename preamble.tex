@@ -17,38 +17,75 @@
             urldate=long,
             doi=true,
             url=true,
-            eprint=false]{biblatex}
+            eprint=false,
+            backref=true,
+            hyperref=true]{biblatex}
 \usepackage{parskip}           % blank lines between paragraphs, no indent
 \usepackage[margin=1cm]{caption} % give long captions a margin
 \usepackage{booktabs}          % typesetting nice tables
 \usepackage[cache=false]{minted} % typesetting code nicely
 \usepackage[pdftex]{graphicx}  % include graphics, preferably pdf
-\usepackage{tikz}              % for drawing high-quality diagrams (e.g., LLM timeline)
+\usepackage{tikz}              % for drawing high-quality diagrams
 \usepackage[pdftex]{hyperref}  % many PDF options can be set here
 \pdfadjustspacing=1           % force LaTeX-like character spacing
+
+% Add listings package for code snippets
+\usepackage{listings}
+\usepackage{xcolor}
+
+% Configure listings package
+\lstset{
+    basicstyle=\small\ttfamily,
+    keywordstyle=\color{blue},
+    commentstyle=\color{green!60!black},
+    stringstyle=\color{red},
+    breaklines=true,
+    breakatwhitespace=true,
+    showstringspaces=false,
+    frame=single,
+    tabsize=4,
+    captionpos=b,
+    escapeinside={(*@}{@*)},  % for special characters in code
+    extendedchars=true
+}
+
+% Define mystyle for evaluation chapter code samples
+\lstdefinestyle{mystyle}{
+    basicstyle=\small\ttfamily,
+    breaklines=true,
+    frame=none,
+    showstringspaces=false,
+    commentstyle=\color{gray},
+    backgroundcolor=\color{gray!10},
+    captionpos=t
+}
 
 % TikZ and its libraries for diagrams
 \usetikzlibrary{arrows.meta,shapes,positioning,fit}
 
-% Custom commands
+% Custom commands for thesis info
 \newcommand{\mylastname}{Ephriam Tangiri}
 \newcommand{\myfirstname}{Kinlo}
 \newcommand{\mynumber}{30006363}
 \newcommand{\myname}{\myfirstname{} \mylastname{}}
-\newcommand{\mytitle}{Ontology-Enhance Contextual Reasoning for Large Language Models in STEM Education}
+\newcommand{\mytitle}{Ontology-Enhanced Contextual Reasoning for Large Language Models in STEM Education}
 \newcommand{\mysupervisor}{Prof. Dr. Fatahi Valilai, Omid}
+
+% Add bibliography resources
+\addbibresource{./bibliography/bibliography.bib}
 
 % PDF metadata
 \hypersetup{
     pdfauthor = {\myname},
     pdftitle = {\mytitle},
-    pdfkeywords = {ontology, LLM, STEM education, AI tutor},
+    pdfkeywords = {ontology, contextual reasoning, large language models, STEM education, AI tutor},
     colorlinks = true,
     linkcolor = blue,
     citecolor = blue,
     urlcolor = blue,
-    breaklinks = true
+    breaklinks = true,
+    bookmarks = true,
+    bookmarksopen = true,
+    bookmarksnumbered = true,
+    pdfpagemode = {UseOutlines}
 }
-
-% Add bibliography resources
-\addbibresource{bibliography.bib} 

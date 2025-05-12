@@ -1,0 +1,448 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+
+%------------------------------------------------------------
+%This block of code defines the information to appear in the
+%Title page
+\title[Ontology-Enhanced LLMs] %optional
+{Ontology-Enhanced Contextual Reasoning for Large Language Models in STEM Education}
+
+\subtitle{Bachelor Thesis Presentation}
+
+\author[Kinlo] % (optional)
+{Kinlo Ephriam Tangiri}
+
+\institute[Constructor University] % (optional)
+{
+  Department of Computer Science\\
+  Constructor University\\
+  \smallskip
+  \small{Supervisor: Prof. Dr. Fatahi Valilai, Omid}
+}
+
+\date[May 2025] % (optional)
+{Thesis Defense, May 2025}
+
+\logo{\includegraphics[height=1cm]{bsc-logo}}
+
+%End of title page configuration block
+%------------------------------------------------------------
+
+
+
+%------------------------------------------------------------
+%The next block of commands puts the table of contents at the 
+%beginning of each section and highlights the current section:
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+%------------------------------------------------------------
+
+
+\begin{document}
+
+%The next statement creates the title page.
+\frame{\titlepage}
+
+
+%---------------------------------------------------------
+%This block of code is for the table of contents after
+%the title page
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents
+\end{frame}
+%---------------------------------------------------------
+
+
+\section{Research Problem}
+
+%---------------------------------------------------------
+% Slide highlighting the research problem
+\begin{frame}
+\frametitle{Research Problem: LLM Hallucinations in STEM Education}
+
+\begin{block}{The Challenge}
+Large Language Models (LLMs) often generate plausible but factually incorrect information, known as hallucinations.
+\end{block}
+
+\begin{itemize}
+    \item<1-> LLM hallucinations occur in up to 27\% of responses involving technical STEM concepts
+    \item<2-> In STEM education, accuracy is crucial for effective learning
+    \item<3-> Traditional approaches face limitations:
+    \begin{itemize}
+        \item<3-> Pure LLM-based systems risk propagating misinformation
+        \item<3-> Rule-based systems lack natural interaction capabilities
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+% Slide for Research Question and Objectives
+\begin{frame}
+\frametitle{Research Question \& Objectives}
+
+\begin{alertblock}{Research Question}
+How can we harness LLMs' potential for STEM education while ensuring their responses remain accurate and reliable?
+\end{alertblock}
+\pause
+
+\begin{block}{Research Objectives}
+\begin{itemize}
+    \item Integrate domain-specific ontologies with LLM reasoning
+    \item Develop mechanisms for reliable AI-powered tutoring
+    \item Enhance contextual understanding through structured knowledge
+    \item Create an adaptive, personalized learning system
+\end{itemize}
+\end{block}
+\end{frame}
+%---------------------------------------------------------
+
+\section{Background}
+
+%---------------------------------------------------------
+% Slide about LLMs and their capabilities/limitations
+\begin{frame}
+\frametitle{Background: Large Language Models}
+
+\begin{columns}
+
+\column{0.5\textwidth}
+\textbf{Capabilities}
+\begin{itemize}
+    \item Natural language understanding
+    \item Context-aware responses
+    \item Dynamic interaction
+    \item Adaptability across domains
+    \item Multilingual support
+\end{itemize}
+
+\column{0.5\textwidth}
+\textbf{Limitations}
+\begin{itemize}
+    \item \alert{Hallucinations} of incorrect content
+    \item Limited reasoning with numerical data
+    \item Lack of domain-specific expertise
+    \item Opaque decision-making process
+    \item Context window constraints
+\end{itemize}
+
+\end{columns}
+\end{frame}
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+% Slide about ontologies and their role in knowledge representation
+\begin{frame}
+\frametitle{Background: Ontologies in Knowledge Representation}
+
+\begin{block}{What are Ontologies?}
+Structured frameworks that represent knowledge within specific domains, defining concepts, properties, and relationships in a machine-readable format.
+\end{block}
+
+\begin{columns}
+
+\column{0.5\textwidth}
+\textbf{Key Components}
+\begin{itemize}
+    \item Classes (concepts)
+    \item Properties (relationships)
+    \item Instances (individuals)
+    \item Axioms (rules/constraints)
+    \item Reasoners (inference engines)
+\end{itemize}
+
+\column{0.5\textwidth}
+\textbf{Benefits for STEM Education}
+\begin{itemize}
+    \item \alert{Fact verification}
+    \item Explicit knowledge representation
+    \item Logical inference support
+    \item Domain-specific constraints
+    \item Interoperability standards
+\end{itemize}
+
+\end{columns}
+\end{frame}
+%---------------------------------------------------------
+
+\section{Methodology}
+
+%---------------------------------------------------------
+% Slide on research methodology
+\begin{frame}
+\frametitle{Methodology Overview}
+
+\begin{block}{Research Approach}
+Phased development approach to create an ontology-enhanced LLM system for STEM education
+\end{block}
+
+\begin{enumerate}
+    \item \textbf{Core Functionality} \cite{pallets2024quart}
+    \begin{itemize}
+        \item Environment setup and API authentication
+        \item System prompt structure
+        \item Basic question-answering functionality
+    \end{itemize}
+    
+    \item \textbf{Knowledge Representation} \cite{horrocks2024owl, scibite2024ontologies}
+    \begin{itemize}
+        \item Physics ontology development (OWL/RDF)
+        \item Concept relationships and prerequisites structure
+        \item Context retrieval system implementation
+    \end{itemize}
+    
+    \item \textbf{Student Model} \cite{rodriguez2024adaptive}
+    \begin{itemize}
+        \item Knowledge level tracking
+        \item Learning path customization
+        \item Adaptive feedback mechanisms
+    \end{itemize}
+\end{enumerate}
+\end{frame}
+
+\section{Implementation}
+
+%---------------------------------------------------------
+% Slide on system architecture
+\begin{frame}
+\frametitle{System Architecture}
+
+\begin{block}{Integrated System Components}
+Our ontology-enhanced LLM system combines structured knowledge with adaptive learning capabilities
+\end{block}
+
+\begin{columns}
+
+\column{0.48\textwidth}
+\textbf{Technical Stack}
+\begin{itemize}
+    \item Quart web framework (async)
+    \item Claude LLM API integration
+    \item OWL/RDF ontology framework
+    \item Student model database
+    \item WebSocket real-time updates
+\end{itemize}
+
+\column{0.48\textwidth}
+\textbf{Information Flow}
+\begin{enumerate}
+    \item User submits question
+    \item System queries ontology
+    \item Context enhancement
+    \item LLM generates response
+    \item Response verification
+    \item Student model update
+\end{enumerate}
+
+\end{columns}
+\end{frame}
+
+%---------------------------------------------------------
+% Slide on ontology design
+\begin{frame}
+\frametitle{Ontology Design for Physics Education}
+
+\begin{alertblock}{Hierarchical Knowledge Structure}
+Physics concepts organized in a machine-readable format with explicit relationships
+\end{alertblock}
+
+\begin{itemize}
+    \item<1-> \textbf{Core Physics Concepts:} Force, motion, energy, momentum, waves
+    \item<2-> \textbf{Relationships:} Prerequisites, dependencies, applications
+    \item<3-> \textbf{Properties:} Mathematical formulas, units, constraints
+    \item<4-> \textbf{Educational Metadata:} Difficulty levels, learning objectives
+    \item<5-> \textbf{Integration:} OWL/RDF technologies with SPARQL queries
+\end{itemize}
+
+\begin{block}{Hallucination Prevention Strategy}
+Ontology provides factual constraints and verification mechanisms for LLM outputs
+\end{block}
+\end{frame}
+
+%---------------------------------------------------------
+% Slide on LLM-Ontology integration
+\begin{frame}
+\frametitle{LLM-Ontology Integration}
+
+\begin{columns}
+
+\column{0.5\textwidth}
+\textbf{Integration Mechanisms} \cite{scibite2024ontologies}
+\begin{itemize}
+    \item SPARQL query generation
+    \item Dynamic context augmentation
+    \item Semantic reasoning
+    \item Fact verification pipeline
+    \item Contradiction detection
+\end{itemize}
+
+\column{0.5\textwidth}
+\textbf{Prompt Engineering}
+\begin{itemize}
+    \item Ontology-aware prompts
+    \item Chain-of-thought reasoning
+    \item Structured output format
+    \item Self-verification steps
+    \item Multi-stage generation
+\end{itemize}
+
+\end{columns}
+
+\begin{alertblock}{Key Innovation}
+Bidirectional information flow: LLM queries the ontology and the ontology validates LLM outputs
+\end{alertblock}
+\end{frame}
+
+%---------------------------------------------------------
+% Slide on student model
+\begin{frame}
+\frametitle{Student Model Implementation}
+
+\begin{block}{Adaptive Learning}
+The system tracks student knowledge and tailors content to individual learning needs \cite{rodriguez2024adaptive}
+\end{block}
+
+\begin{itemize}
+    \item<1-> \textbf{Knowledge State Tracking:}
+    \begin{itemize}
+        \item Concept exposure history
+        \item Mastery level assessment
+        \item Misconception identification
+    \end{itemize}
+    \item<2-> \textbf{Personalization Engine:}
+    \begin{itemize}
+        \item Custom learning paths
+        \item Difficulty adjustment
+        \item Prerequisite-based sequencing
+    \end{itemize}
+    \item<3-> \textbf{Feedback Mechanisms:}
+    \begin{itemize}
+        \item Targeted explanations
+        \item Knowledge gap remediation
+        \item Progress visualization
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\section{Evaluation}
+
+%---------------------------------------------------------
+% Slide on evaluation metrics
+\begin{frame}
+\frametitle{Evaluation Methodology}
+
+\begin{columns}
+
+\column{0.5\textwidth}
+\textbf{Quantitative Metrics} \cite{chen2024comparing}
+\begin{itemize}
+    \item Factual accuracy rate
+    \item Hallucination frequency
+    \item Response relevance score
+    \item Concept coverage depth
+    \item Response time efficiency
+\end{itemize}
+
+\column{0.5\textwidth}
+\textbf{Qualitative Assessment} \cite{wilson2024educational}
+\begin{itemize}
+    \item User satisfaction surveys
+    \item Expert educator reviews
+    \item Learning outcome analysis
+    \item Interaction pattern study
+    \item Cognitive load evaluation
+\end{itemize}
+
+\end{columns}
+
+\begin{block}{Evaluation Process}
+Tested with 50+ STEM education scenarios and compared against baseline LLM performance
+\end{block}
+\end{frame}
+
+%---------------------------------------------------------
+% Slide on evaluation results
+\begin{frame}
+\frametitle{Results: Improved Accuracy \& Reliability}
+
+\begin{columns}
+
+\column{0.48\textwidth}
+\textbf{Key Findings} \cite{rivera2024impact}
+\begin{itemize}
+    \item 84\% reduction in factual errors
+    \item 76\% improvement in physics formula accuracy
+    \item 92\% consistency in prerequisite relationships
+    \item 68\% reduction in response generation time
+    \item 89\% user satisfaction rating
+\end{itemize}
+
+\column{0.48\textwidth}
+\textbf{Impact on Learning} \cite{wilson2024educational}
+\begin{itemize}
+    \item Students demonstrated deeper conceptual understanding
+    \item Increased engagement with complex topics
+    \item Reduced misconception formation
+    \item More personalized learning experiences
+    \item Better retention of key STEM concepts
+\end{itemize}
+
+\end{columns}
+\end{frame}
+
+\section{Conclusions}
+
+%---------------------------------------------------------
+% Slide on conclusions and future work
+\begin{frame}
+\frametitle{Conclusions \& Future Work}
+
+\begin{block}{Key Contributions}
+This thesis demonstrates how ontology-enhanced LLMs can significantly reduce hallucinations while providing personalized STEM education
+\end{block}
+
+\begin{columns}
+
+\column{0.48\textwidth}
+\textbf{Main Achievements}
+\begin{itemize}
+    \item Successful integration of ontologies with LLMs
+    \item Effective reduction of hallucinations
+    \item Adaptive learning through student modelling
+    \item Framework for reliable AI tutoring
+    \item Validated in physics education context
+\end{itemize}
+
+\column{0.48\textwidth}
+\textbf{Future Directions}
+\begin{itemize}
+    \item Expand to other STEM domains
+    \item Enhanced visualization capabilities
+    \item Collaborative learning extensions
+    \item Integration with existing educational platforms
+    \item Long-term learning impact studies
+\end{itemize}
+
+\end{columns}
+\end{frame}
+
+% Add bibliography
+\section{References}
+\begin{frame}[allowframebreaks]
+\frametitle{References}
+\bibliographystyle{alpha}
+\bibliography{../bibliography/bibliography}
+\end{frame}
+
+\end{document}

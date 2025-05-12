@@ -34,9 +34,8 @@ Our research focuses on four primary objectives:
 
 \begin{itemize}
     \item Develop a framework that integrates ontological knowledge with LLM reasoning
-    \item Create mechanisms to detect and prevent hallucinations using ontological constraints
-    \item Enhance contextual understanding of STEM concepts through semantic verification
     \item Build an adaptive system that provides personalized, accurate learning experiences
+    \item Create mechanism that reduces the rate of hallucinations using ontological constraints
 \end{itemize}
 
 \section{Research Contributions}
@@ -46,8 +45,7 @@ This work advances the field through several key contributions:
 \begin{itemize}
     \item \textbf{Technical Innovation:}
         \begin{itemize}
-            \item Novel ontology-enhanced LLM architecture for STEM education
-            \item Real-time verification framework using semantic constraints
+            \item Ontology-enhanced LLM architecture for STEM education
             \item Efficient integration of structured and unstructured knowledge
         \end{itemize}
     
@@ -72,7 +70,7 @@ Our approach builds upon recent advances in several areas:
 
 \begin{itemize}
     \item \textbf{LLM Architecture:} Latest developments in transformer models and attention mechanisms \cite{zhang2024survey}
-    \item \textbf{Ontology Engineering:} Semantic web technologies and knowledge representation \cite{funk2023neuro}
+    \item \textbf{Ontology Engineering:} Semantic web technologies and knowledge representation \cite{doubletaken2024llm}
     \item \textbf{Hallucination Mitigation:} Recent techniques in fact verification and constraint satisfaction \cite{ji2023survey}
     \item \textbf{Educational Technology:} Adaptive learning systems and cognitive load theory
 \end{itemize}
@@ -91,7 +89,7 @@ We address two categories of challenges:
 
 \subsection{Technical Challenges}
 \begin{itemize}
-    \item Efficient integration of OWL/RDF ontologies with LLM processing
+    \item Efficient integration of OWL/SPARQL ontologies with LLM processing
     \item Real-time semantic verification of LLM outputs
     \item Scalable knowledge base management
     \item Optimization of response latency and resource usage
@@ -107,7 +105,7 @@ Despite advances in LLM technology, hallucination remains a persistent problem. 
 \begin{itemize}
     \item \textbf{Prompt Engineering:} This approach involves carefully designing input prompts to guide the model toward more accurate responses. For example, prompts can be enriched with context or specify the desired output format. While prompt engineering can reduce hallucinations in some cases, it requires significant manual effort and domain expertise. It is also difficult to scale and may not generalize well to new topics or user needs.
     \item \textbf{Fine-Tuning:} Fine-tuning retrains the model on curated datasets that emphasize accuracy and factual correctness. This can improve reliability, but maintaining up-to-date, high-quality datasets is resource-intensive. Continuous fine-tuning is often impractical for real-time educational settings due to cost and latency constraints.
-    \item \textbf{Grounding with Ontologies:} Integrating formal ontologies into LLM workflows provides structured, domain-specific knowledge. Ontologies define key concepts and relationships, enabling the model to reason with explicit, verifiable information. This approach supports retrieval-augmented generation (RAG) and real-time fact-checking, directly addressing hallucination by relating responses in trusted knowledge frameworks.
+    \item \textbf{Ontologies integration:} Integrating formal ontologies into LLM workflows provides structured, domain-specific knowledge. Ontologies define key concepts and relationships, enabling the model to reason with explicit, verifiable information. This approach supports retrieval-augmented generation (RAG) and real-time fact-checking, directly addressing hallucination by relating responses in trusted knowledge frameworks.
 \end{itemize}
 
 % WHAT: Each strategy has unique challenges that limit its effectiveness in STEM education.
@@ -137,4 +135,6 @@ The dissertation is organized as follows:
     \item Chapter \ref{chap:implementation} presents the system implementation and architecture
     \item Chapter \ref{chap:evaluation} provides empirical evaluation and results analysis
     \item Chapter \ref{chap:conclusion} discusses implications and future research directions
-\end{itemize} 
+\end{itemize}
+
+To facilitate further research, the complete source code for the ontology-enhanced LLM system developed in this thesis research process is available on GitHub at \url{https://github.com/9117KET/ai-avatar-ontology-integration-poc.git}. Additionally, a live demonstration of the system can be accessed at \url{https://ai-avatar-ontology-integration-poc.vercel.app/}. Further details about the repository structure and deployment are provided in Chapter \ref{chap:implementation}.

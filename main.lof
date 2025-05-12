@@ -1,8 +1,19 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Timeline of LLM Development in Education. Key milestones are shown from the first chatbot (ELIZA) to modern, domain-specific LLMs. This visual contextualizes the rapid evolution and growing impact of LLMs in educational technology.}}{7}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Taxonomy of LLM Hallucinations in Education. The diagram categorizes common types of hallucinations produced by language models in educational settings, clarifying the risks and motivating the need for ontology-based verification.}}{7}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Sample ontology structure for STEM education, focusing on mathematical functions and their sub-concepts. Adapted from \blx@tocontentsinit {0}\cite {hare2024ontology}. This diagram demonstrates how ontologies can organize and relate key concepts, supporting adaptive and personalized learning in AI-driven educational systems.}}{8}{figure.caption.9}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces High-level System Architecture showing the four main layers (Client, API, Core Processing, and Data) and their interconnected components. The arrows indicate data flow and component interactions within and between layers.}}{11}{figure.caption.10}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Comparison: Standard LLM vs. Ontology-Enhanced Response for Physics Concept Explanation}}{22}{figure.caption.11}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Multi-turn Conversation Showing Context Retention}}{22}{figure.caption.12}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Handling of Complex Physics Concept: [Specific Concept]}}{22}{figure.caption.13}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Misconception Correction Example}}{23}{figure.caption.14}%
 \addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Comparison of factual accuracy between our ontology-enhanced LLM (left) and standard LLMs (right) when explaining complex physics concepts.}}{25}{figure.caption.15}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Comparison of context retention across multi-turn educational dialogues between our ontology-enhanced LLM (left) and standard LLMs (right).}}{25}{figure.caption.16}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Comparison of misconception identification and correction between our ontology-enhanced LLM (left) and standard LLMs (right).}}{25}{figure.caption.17}%
 \addvspace {10\p@ }

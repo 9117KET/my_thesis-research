@@ -44,10 +44,79 @@ The ontology was developed using OWL and RDF technologies, following semantic we
     \end{itemize}
 \end{itemize}
 
+\subsection{Ontology Schema Implementation}
+\label{subsec:ontology-schema}
+
+The physics tutoring ontology was implemented in OWL/RDF format, defining key classes, properties, and relationships. Below is a snippet from our ontology schema that demonstrates the structure:
+
+\begin{lstlisting}[language=XML, caption=Physics Tutor Ontology Schema, label=lst:ontology]
+<!-- Classes -->
+<owl:Class rdf:about="\#Concept"/>
+<owl:Class rdf:about="\#PhysicalQuantity"/>
+<owl:Class rdf:about="\#Law"/>
+<owl:Class rdf:about="\#Unit"/>
+<owl:Class rdf:about="\#Formula"/>
+<owl:Class rdf:about="\#Principle"/>
+<owl:Class rdf:about="\#Example"/>
+<owl:Class rdf:about="\#Application"/>
+<owl:Class rdf:about="\#Topic"/>
+
+<!-- Object Properties -->
+<owl:ObjectProperty rdf:about="\#hasPrerequisite">
+    <rdfs:domain rdf:resource="\#Concept"/>
+    <rdfs:range rdf:resource="\#Concept"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="\#hasUnit">
+    <rdfs:domain rdf:resource="\#PhysicalQuantity"/>
+    <rdfs:range rdf:resource="\#Unit"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="\#hasFormula">
+    <rdfs:domain rdf:resource="\#Law"/>
+    <rdfs:range rdf:resource="\#Formula"/>
+</owl:ObjectProperty>
+
+<!-- Data Properties -->
+<owl:DatatypeProperty rdf:about="\#hasDefinition">
+    <rdfs:domain rdf:resource="\#Concept"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema\#string"/>
+</owl:DatatypeProperty>
+\end{lstlisting}
+
+The implementation of the ontology layer is crucial for providing the structural knowledge framework that guides our LLM tutor. Our ontology is implemented using the Resource Description Framework (RDF) and Web Ontology Language (OWL), which provide a standardized approach to knowledge representation \cite{horrocks2024owl}.
+
+The ontology includes instances of physics concepts with their relationships:
+
+\begin{lstlisting}[language=XML, caption=Physics Concept Instances, label=lst:ontology-instances]
+<!-- Physical Quantities -->
+<PhysicalQuantity rdf:about="\#Force">
+    <hasDefinition>Force is a push or pull that can change the motion of an object</hasDefinition>
+    <hasUnit rdf:resource="\#Newton"/>
+    <isPartOf rdf:resource="\#NewtonsLaws"/>
+    <relatesTo rdf:resource="\#Acceleration"/>
+    <relatesTo rdf:resource="\#Mass"/>
+    <hasApplication rdf:resource="\#RocketPropulsion"/>
+    <isUsedIn rdf:resource="\#FEqualsMA"/>
+</PhysicalQuantity>
+
+<!-- Laws -->
+<Law rdf:about="\#NewtonsSecondLaw">
+    <hasDefinition>Newton's Second Law states that the acceleration of an object is directly proportional 
+    to the net force acting on it and inversely proportional to its mass</hasDefinition>
+    <hasPrerequisite rdf:resource="\#Force"/>
+    <hasPrerequisite rdf:resource="\#Mass"/>
+    <hasPrerequisite rdf:resource="\#Acceleration"/>
+    <hasFormula rdf:resource="\#FEqualsMA"/>
+    <isPartOf rdf:resource="\#NewtonsLaws"/>
+    <hasApplication rdf:resource="\#SportsPerformance"/>
+</Law>
+\end{lstlisting}
+
 \section{Knowledge Base Integration}
 \label{sec:kb-integration}
 
-The knowledge base integration with the LLM follows a systematic approach based on recent advances in neuro-symbolic integration~\cite{funk2023neuro}:
+Integrating the ontology with the LLM involves establishing connections between the structured knowledge in our ontology and the capabilities of the language model \cite{scibite2024ontologies}. This section details the implementation of this integration.
 
 \begin{itemize}
   \item \textbf{SPARQL Queries:} 
@@ -74,6 +143,56 @@ The knowledge base integration with the LLM follows a systematic approach based 
       \item Educational scaffolding integration
     \end{itemize}
 \end{itemize}
+
+\subsection{Ontology Query Implementation}
+\label{subsec:ontology-query}
+
+The system implements efficient ontology querying to extract relevant context for student questions. Below is the implementation of our context retrieval method:
+
+\begin{lstlisting}[language=Python, caption=Ontology Context Retrieval, label=lst:context-retrieval]
+def _get_relevant_context(self, question: str) -> tuple[str, List[str]]:
+    """
+    Extract relevant context from the ontology based on the user's question.
+    
+    Returns:
+        tuple: (context_text, list_of_concepts_covered)
+    """
+    context = []
+    concepts_covered = []
+    
+    # Convert question to lowercase for case-insensitive matching
+    question_lower = question.lower()
+    
+    # Check for specific Newton's Laws
+    law_mappings = {
+        "newton's first law": "NewtonsFirstLaw",
+        "law of inertia": "NewtonsFirstLaw",
+        "newton's second law": "NewtonsSecondLaw",
+        "f = ma": "NewtonsSecondLaw",
+        "newton's third law": "NewtonsThirdLaw",
+        "action reaction": "NewtonsThirdLaw"
+    }
+    
+    for question_law, ontology_law in law_mappings.items():
+        if question_law in question_lower:
+            law_obj = self.onto.search_one(iri=f"*{ontology_law}")
+            if law_obj:
+                concepts_covered.append(ontology_law)
+                context.append(f"Law: {ontology_law}")
+                if hasattr(law_obj, 'hasDefinition') and len(law_obj.hasDefinition) > 0:
+                    context.append(f"Definition: {law_obj.hasDefinition[0]}")
+                if hasattr(law_obj, 'hasPrerequisite'):
+                    context.append("Prerequisites:")
+                    for prereq in law_obj.hasPrerequisite:
+                        concepts_covered.append(prereq.name)
+                        if hasattr(prereq, 'hasDefinition'):
+                            context.append(f"- {prereq.name}: {prereq.hasDefinition[0]}")
+                return "\n".join(context), concepts_covered
+                
+    # Additional context retrieval logic...
+    
+    return "\n".join(context), list(set(concepts_covered))
+\end{lstlisting}
 
 \section{System Components}
 \label{sec:system-components}
@@ -140,6 +259,123 @@ The backend architecture emphasizes scalability and reliability, incorporating b
     \end{itemize}
 \end{itemize}
 
+The backend server is implemented using Quart, an asynchronous Python web framework that is compatible with the Flask API \cite{pallets2024quart}. Quart was chosen for its support of asynchronous request handling, which is essential for managing multiple concurrent tutoring sessions while maintaining responsiveness.
+
+\subsection{API Implementation}
+\label{subsec:api-implementation}
+
+The system implements a secure, asynchronous API using Quart to handle tutoring requests:
+
+\begin{lstlisting}[language=Python, caption=API Implementation, label=lst:api-implementation]
+@app.route('/api/ask', methods=['POST'])
+async def ask_tutor():
+    """API endpoint to ask the tutor a question with input validation."""
+    try:
+        data = await request.get_json()
+        if not data or 'question' not in data:
+            return jsonify({'error': 'Question is required'}), 400
+        
+        session_id = data.get('session_id', 'default_session')
+        question = data['question']
+        
+        # Input validation
+        if not isinstance(question, str) or len(question) > 1000:
+            return jsonify({'error': 'Invalid question format'}), 400
+        
+        # Get the tutor instance for this session
+        tutor = get_tutor(session_id)
+        
+        # Get the tutor's response
+        response = await tutor.tutor(question)
+        
+        # Return the response with student model data
+        return jsonify({
+            'response': response,
+            'student_model': {
+                'exposed_concepts': list(tutor.student_model.exposed_concepts),
+                'understood_concepts': list(tutor.student_model.understood_concepts),
+                'knowledge_level': tutor.student_model.knowledge_level
+            }
+        })
+    
+    except Exception as e:
+        logger.error(f"Error processing question: {e}")
+        return jsonify({'error': 'Internal server error'}), 500
+\end{lstlisting}
+
+\section{Student Model Implementation}
+\label{sec:student-model}
+
+The student model tracks learning progress and adapts tutoring to individual needs:
+
+\begin{lstlisting}[language=Python, caption=Student Model Implementation, label=lst:student-model]
+class StudentModel:
+    """
+    Tracks a student's knowledge state, interaction history, and learning progress.
+    """
+    
+    def __init__(self, student_id: str, data_path: Optional[str] = None):
+        """Initialize a new student model or load an existing one."""
+        self.student_id = student_id
+        self.data_path = data_path or os.path.join(
+            os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 
+            'data', 
+            'students'
+        )
+        
+        # Create data directory if it doesn't exist
+        os.makedirs(self.data_path, exist_ok=True)
+        
+        # Initialize student model attributes
+        self.exposed_concepts: Set[str] = set()  # Concepts the student has seen
+        self.understood_concepts: Set[str] = set()  # Concepts the student understands
+        self.misconceptions: Dict[str, str] = {}  # Concept name -> description of misconception
+        self.quiz_results: List[Dict] = []  # List of quiz results
+        self.interaction_history: List[Dict] = []  # List of interactions
+        self.knowledge_level: Dict[str, float] = {}  # Concept name -> knowledge level (0.0 to 1.0)
+        
+        # Try to load existing data
+        self._load_data()
+    
+    def update_quiz_result(self, concept: str, correct: bool, confidence: float) -> None:
+        """
+        Update the student model with a quiz result.
+        """
+        # Record the quiz result
+        quiz_result = {
+            'timestamp': datetime.now().isoformat(),
+            'concept': concept,
+            'correct': correct,
+            'confidence': confidence
+        }
+        self.quiz_results.append(quiz_result)
+        
+        # Update knowledge level for the concept
+        current_level = self.knowledge_level.get(concept, 0.0)
+        
+        if correct:
+            # If correct, increase knowledge level, but weight by confidence
+            self.knowledge_level[concept] = min(1.0, current_level + (0.2 * confidence))
+            
+            # If knowledge level is high enough, add to understood concepts
+            if self.knowledge_level[concept] >= 0.7:
+                self.understood_concepts.add(concept)
+                # Remove any misconceptions about this concept
+                if concept in self.misconceptions:
+                    del self.misconceptions[concept]
+        else:
+            # If incorrect, decrease knowledge level
+            self.knowledge_level[concept] = max(0.0, current_level - (0.1 * confidence))
+            
+            # If they were very confident but wrong, might be a misconception
+            if confidence > 0.7:
+                # We'd need more logic to identify the specific misconception
+                pass
+        
+        # Save the updated model
+        self.save()
+\end{lstlisting}
+
 \section{Integration Challenges}
 \label{sec:challenges}
 
@@ -179,6 +415,48 @@ We addressed several key challenges during implementation, drawing from recent r
     \end{itemize}
 \end{itemize}
 
+\section{LLM Integration}
+\label{sec:llm-integration}
+
+The integration with Claude AI uses a carefully designed prompt engineering approach:
+
+\begin{lstlisting}[language=Python, caption=LLM Integration, label=lst:llm-integration]
+async def tutor(self, user_question: str) -> str:
+    """
+    Main tutoring method that processes user questions and provides adaptive responses.
+    Updates the student model based on the interaction.
+    """
+    # Get relevant context from the ontology
+    context, concepts_covered = self._get_relevant_context(user_question)
+    
+    # Adapt the context based on the student model
+    adapted_context = self._adapt_context_to_student(context, concepts_covered)
+    
+    # Construct the prompt for Claude
+    prompt = f"{self.system_prompt}\n\nContext from knowledge base:\n{adapted_context}\n\nStudent question: {user_question}\n\nProvide a helpful, accurate, and educational response:"
+    
+    # Call the Claude API
+    try:
+        response = await self.client.messages.create(
+            model="claude-3-opus-20240229",
+            max_tokens=1024,
+            system=self.system_prompt,
+            messages=[
+                {"role": "user", "content": f"Context from knowledge base:\n{adapted_context}\n\nStudent question: {user_question}"}
+            ]
+        )
+        
+        response_text = response.content[0].text
+        
+        # Update the student model with this interaction
+        self.student_model.add_interaction(user_question, response_text, concepts_covered)
+        
+        return response_text
+    except Exception as e:
+        logger.error(f"Error calling Claude API: {str(e)}")
+        raise
+\end{lstlisting}
+
 \section{Educational Technology Integration}
 \label{sec:ed-tech}
 
@@ -209,6 +487,48 @@ Following best practices in educational technology, we implemented:
       \item Progress visualization
     \end{itemize}
 \end{itemize}
+
+\subsection{Learning Path Generation}
+\label{subsec:learning-path}
+
+The system generates personalized learning paths based on the ontology structure:
+
+\begin{lstlisting}[language=Python, caption=Learning Path Generation, label=lst:learning-path]
+def get_learning_path(self, target_concept: str, concept_graph: Dict[str, List[str]]) -> List[str]:
+    """
+    Generate a learning path to reach a target concept.
+    
+    Args:
+        target_concept: The concept the student wants to learn
+        concept_graph: Graph of concept prerequisites
+        
+    Returns:
+        List of concepts in order they should be learned
+    """
+    # Path will contain concepts in the order they should be learned
+    path = []
+    visited = set()
+    
+    def add_prerequisites(concept):
+        """Recursively add prerequisites to the path."""
+        if concept in visited:
+            return
+        
+        visited.add(concept)
+        
+        # First add all prerequisites
+        if concept in concept_graph:
+            for prereq in concept_graph[concept]:
+                add_prerequisites(prereq)
+        
+        # Then add this concept if not already understood
+        if concept not in self.understood_concepts:
+            path.append(concept)
+    
+    # Build the path starting from the target concept
+    add_prerequisites(target_concept)
+    return path
+\end{lstlisting}
 
 \section{Quality Assurance}
 \label{sec:qa}
@@ -242,3 +562,95 @@ Our quality assurance process includes comprehensive testing and monitoring stra
 \end{itemize}
 
 This implementation provides a robust foundation for our ontology-enhanced LLM system, ensuring both technical excellence and educational effectiveness~\cite{liu2024ontology}. The next chapter will evaluate the system's performance and impact on learning outcomes. 
+
+
+\section{Source Code and Live Demonstration}
+\label{sec:code-demo}
+
+\subsection{Repository Structure}
+\label{subsec:repo-structure}
+
+The complete source code for the ontology-enhanced LLM system described in this thesis is available on GitHub at \url{https://ai-avatar-ontology-integration-poc.vercel.app/}. The repository is organized to facilitate both academic study and potential extensions by other researchers:
+
+\begin{itemize}
+  \item \textbf{/api}: Server-side implementation
+    \begin{itemize}
+      \item /routes: API endpoint route definitions and handlers
+      \item /utils: Utility functions for API operations
+      \item index.py: Main API application
+      \item vercel.py: Vercel serverless function handler
+    \end{itemize}
+  
+  \item \textbf{/llm\_integration}: LLM integration and student modeling
+    \begin{itemize}
+      \item claude\_tutor.py: Implementation of the Claude AI tutor
+      \item student\_model.py: Student knowledge and progress tracking
+      \item example.py: Example implementation of LLM integration
+      \item example\_with\_student\_model.py: Combined LLM and student model example
+    \end{itemize}
+  
+  \item \textbf{/ontology}: Contains the OWL/RDF ontology files
+    \begin{itemize}
+      \item /schemas: Directory with physics\_tutor.owl ontology
+      \item /tests: Testing for ontology validation
+    \end{itemize}
+  
+  \item \textbf{/static}: Frontend assets
+    \begin{itemize}
+      \item /css: Stylesheet files
+      \item /js: JavaScript modules
+      \item /images: Visual assets
+      \item index.html: Main application interface
+    \end{itemize}
+  
+  \item \textbf{/docs}: Documentation and design
+    \begin{itemize}
+      \item system-architecture.md: Detailed system architecture
+      \item ontology-ai-avatar-model.tex: Formal model description
+      \item roadmap.md: Development roadmap
+      \item uml.md: UML diagrams and relationships
+    \end{itemize}
+  
+  \item \textbf{/data}: Storage for student data and model information
+    \begin{itemize}
+      \item /students: Individual student models and interaction history
+    \end{itemize}
+  
+  \item \textbf{/tests}: Test suite for system components
+  
+  \item \textbf{app.py}: Main application entry point
+  \item \textbf{requirements.txt}: Production dependencies
+  \item \textbf{dev-requirements.txt}: Development dependencies
+\end{itemize}
+
+The repository includes comprehensive documentation on system setup, configuration, and extension guidelines, making it accessible for researchers wishing to build upon this work.
+
+\subsection{Live Demonstration}
+\label{subsec:live-demo}
+
+A fully functional demonstration of the system is available at \url{https://ai-avatar-ontology-integration-poc.vercel.app/}. The live demo includes the following features:
+
+\begin{itemize}
+  \item Interactive physics tutor with Claude 3 LLM integration
+  \item Student modeling with adaptive learning paths
+  \item Ontology-based knowledge verification
+  \item Session management and interaction history
+  \item Web-based avatar interface for engagement
+\end{itemize}
+
+The live demonstration provides education researchers and instructors with a practical understanding of how ontology-enhanced LLMs can be applied in real educational settings. Visitors can experience the system's adaptive responses and how it maintains factual accuracy while providing personalized learning experiences.
+
+\subsection{Deployment Architecture}
+\label{subsec:deployment-arch}
+
+The production deployment uses a serverless architecture on Vercel:
+
+\begin{itemize}
+  \item Serverless API functions for scalable backend services
+  \item Asynchronous Quart framework (Flask-compatible) for request handling
+  \item JWT-based session management for security
+  \item Environment-based configuration for deployment flexibility
+  \item Integrated CI/CD pipeline through Vercel deployment
+\end{itemize}
+
+This architecture ensures the system can scale to support multiple simultaneous users while maintaining low response latency, which is critical for educational applications where engagement depends on responsive interactions. The system leverages Vercel's edge network for fast content delivery and scalable backend processing, as specified in the \texttt{vercel.json} configuration file.
