@@ -42,27 +42,23 @@
 %End of title page configuration block
 %------------------------------------------------------------
 
-
-
 %------------------------------------------------------------
-%The next block of commands puts the table of contents at the 
-%beginning of each section and highlights the current section:
+% Modified TOC approach - no TOC at every section
+% Uncomment this if you want TOC at beginning of each section
 
-\AtBeginSection[]
-{
-  \begin{frame}
-    \frametitle{Table of Contents}
-    \tableofcontents[currentsection]
-  \end{frame}
-}
+% \AtBeginSection[]
+% {
+%   \begin{frame}
+%     \frametitle{Table of Contents}
+%     \tableofcontents[currentsection]
+%   \end{frame}
+% }
 %------------------------------------------------------------
-
 
 \begin{document}
 
 %The next statement creates the title page.
 \frame{\titlepage}
-
 
 %---------------------------------------------------------
 %This block of code is for the table of contents after
@@ -72,7 +68,6 @@
 \tableofcontents
 \end{frame}
 %---------------------------------------------------------
-
 
 \section{Research Problem}
 
@@ -99,8 +94,6 @@ Large Language Models (LLMs) hallucinate a lot by generating confidently plausib
 \end{frame}
 
 %---------------------------------------------------------
-
-%---------------------------------------------------------
 % Slide for Research Question and Objectives
 \begin{frame}
 \frametitle{Research Question \& Objectives}
@@ -108,7 +101,6 @@ Large Language Models (LLMs) hallucinate a lot by generating confidently plausib
 \begin{alertblock}{Research Question}
 How can we make use of LLMs' natural language processing capabilities to enhance STEM education while ensuring their responses remain accurate and reliable?
 \end{alertblock}
-\pause
 
 \begin{block}{Research Objectives}
 \begin{itemize}
@@ -130,7 +122,6 @@ Structured frameworks that represent knowledge within specific domains, defining
 \end{block}
 
 \begin{columns}
-
 \column{0.5\textwidth}
 \textbf{Key Components}
 \begin{itemize}
@@ -146,10 +137,8 @@ Structured frameworks that represent knowledge within specific domains, defining
 \begin{itemize}
     \item \alert{Fact verification}
     \item Explicit knowledge representation
-    \item Logical inference support
     \item Domain-specific constraints
 \end{itemize}
-
 \end{columns}
 \end{frame}
 %---------------------------------------------------------
@@ -193,10 +182,9 @@ Phased development approach to create an ontology-enhanced LLM system for STEM e
 Our ontology-enhanced LLM system combines structured knowledge with adaptive learning capabilities
 \end{block}
 
-% Diagram removed to resolve compilation issues
+% System architecture diagram removed to resolve compilation issues
 
 \begin{columns}
-
 \column{0.48\textwidth}
 \textbf{Technical Stack}
 \begin{itemize}
@@ -212,7 +200,6 @@ Our ontology-enhanced LLM system combines structured knowledge with adaptive lea
     \item Real-time fact verification
     \item Student model adaptation
 \end{itemize}
-
 \end{columns}
 \end{frame}
 
@@ -232,10 +219,6 @@ Physics concepts organized in a machine-readable format with explicit relationsh
     \item<4-> \textbf{Educational Metadata:} Difficulty levels, learning objectives
     \item<5-> \textbf{Integration:} OWL/RDF technologies with SPARQL queries
 \end{itemize}
-
-\begin{block}{Hallucination Prevention Strategy}
-Ontology provides factual constraints and verification mechanisms, reducing hallucination rate by 75\%.
-\end{block}
 \end{frame}
 
 %---------------------------------------------------------
@@ -254,7 +237,6 @@ $\xrightarrow{\text{queries}}$ &
 \end{figure}
 
 \begin{columns}
-
 \column{0.5\textwidth}
 \textbf{Integration Mechanisms}
 \begin{itemize}
@@ -270,12 +252,8 @@ $\xrightarrow{\text{queries}}$ &
     \item Chain-of-thought reasoning
     \item Self-verification steps
 \end{itemize}
-
 \end{columns}
 \end{frame}
-
-%---------------------------------------------------------
-
 
 \section{Evaluation}
 
@@ -289,7 +267,6 @@ Modular implementation with statistical analysis and visualization components
 \end{alertblock}
 
 \begin{columns}
-
 \column{0.5\textwidth}
 \textbf{Testing Approach}
 \begin{itemize}
@@ -301,17 +278,6 @@ Modular implementation with statistical analysis and visualization components
         \item Keyword matching
         \item Expert verification
     \end{itemize}
-
-    % sample of an FCI question
-    \begin{itemize}
-    \item {
-    "id": 1,
-    "question": "Two metal balls are the same size but one weighs twice as much as the other. The balls are dropped from the roof of a single story building at the same instant. The time it takes the balls to reach the ground will be:",
-    "options": "A) The heavier ball will reach the ground in about half the time of the lighter one.\nB) The heavier ball will reach the ground before the lighter one, but not in half the time.\nC) Both balls will reach the ground in about the same time.\nD) The lighter ball will reach the ground before the heavier one.\nE) Not enough information is provided to answer the question.",
-    "correct_answer": "C",
-    "concepts": ["gravity", "free fall", "Newtonian mechanics"],
-    "misconceptions": ["heavier objects fall faster", "confusing mass and weight"]
-    }
 \end{itemize}
 
 \column{0.5\textwidth}
@@ -319,9 +285,7 @@ Modular implementation with statistical analysis and visualization components
 \begin{itemize}
     \item Hallucination rate
     \item Trade-off analysis
-
 \end{itemize}
-
 \end{columns}
 \end{frame}
 
@@ -331,7 +295,6 @@ Modular implementation with statistical analysis and visualization components
 \frametitle{Results: Quantitative Analysis}
 
 \begin{columns}
-
 \column{0.5\textwidth}
 \begin{center}
 \includegraphics[width=\textwidth]{../results_final/model_comparison.png}
@@ -346,7 +309,6 @@ Modular implementation with statistical analysis and visualization components
     \item \alert{Key trade-off}: Accuracy decreased from 86.67\% to 46.67\%
     \item Better for explanations than assessment
 \end{itemize}
-
 \end{columns}
 \end{frame}
 
@@ -356,7 +318,6 @@ Modular implementation with statistical analysis and visualization components
 \frametitle{Educational Impact Analysis}
 
 \begin{columns}
-
 \column{0.5\textwidth}
 \begin{block}{Case Study: Free Fall Explanations}
 \begin{center}
@@ -381,7 +342,6 @@ All objects accelerate at the same rate regardless of mass (g = 9.8 m/s²).
     \item Task-dependent constraint application recommended
     \item Balance between factual reliability and flexibility
 \end{itemize}
-
 \end{columns}
 \end{frame}
 
@@ -390,34 +350,37 @@ All objects accelerate at the same rate regardless of mass (g = 9.8 m/s²).
 %---------------------------------------------------------
 % Slide on conclusion
 \begin{frame}
-\frametitle{Conclusions \& Future Work}
+\frametitle{Conclusions}
 
 \begin{alertblock}{Research Contributions}
-This thesis demonstrates how ontology-enhanced LLMs can significantly reduce hallucinations while providing personalized STEM education through structured knowledge integration and adaptive learning techniques
+This thesis demonstrates how ontology-enhanced LLMs can significantly reduce hallucinations.
 \end{alertblock}
 
 \begin{columns}
-
 \column{0.48\textwidth}
 \textbf{Key Takeaways}
 \begin{itemize}
     \item 26.67\% → 6.67\% hallucination rate reduction
-    \item Medium effect size (Cohen's d = 0.528)
     \item Accuracy decreased from 86.67\% to 46.67\%
     \item Task-dependent performance identified
     \item Better for explanations than assessment
 \end{itemize}
+\end{columns}
+\end{frame}
 
+% Slide on future research directions
+\begin{frame}
+\frametitle{Future Research Directions}
+
+\begin{columns}
 \column{0.48\textwidth}
 \textbf{Future Research Directions}
 \begin{itemize}
     \item Develop adaptive constraint mechanisms
-    \item Create hybrid approaches for balanced performance
-    \item Optimize for specific educational tasks
     \item Expand statistical evaluation with larger samples
-    \item Explore task-specific ontology applications
+    \item Create an adaptive student model that adjust responses based on the student's knowledge level and learning objectives
+    \item Create an Avatar that can interact with the student and provide personalized feedback
 \end{itemize}
-
 \end{columns}
 \end{frame}
 
@@ -438,4 +401,5 @@ This thesis demonstrates how ontology-enhanced LLMs can significantly reduce hal
 
 \bibliography{../bibliography/bibliography}
 \end{frame}
+
 \end{document}

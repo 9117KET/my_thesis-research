@@ -3,12 +3,12 @@
 \label{chap:implementation}
 
 \section{Overview}
-This chapter details the technical implementation of our ontology-enhanced LLM system, following best practices in educational technology integration. The implementation focuses on creating a robust, scalable, and educationally effective system that aligns with current research in adaptive learning~\cite{wang2024adaptive}.
+This chapter details the technical implementation of our ontology-enhanced LLM system, following best practices in educational technology integration. The implementation focuses on creating a simple prove of concept for our ontology-enhanced LLM system.
 
 \section{Ontology Development}
 \label{sec:ontology-dev}
 
-The ontology was developed using OWL and RDF technologies, following semantic web best practices~\cite{liu2024ontology}:
+The ontology was developed using OWL and RDF technologies, following semantic web best practices~
 
 \begin{itemize}
   \item \textbf{Core Concepts:} 
@@ -42,6 +42,7 @@ The ontology was developed using OWL and RDF technologies, following semantic we
       \item Common misconceptions and corrections
       \item Application scenarios
     \end{itemize}
+
 \end{itemize}
 
 \subsection{Ontology Schema Implementation}
@@ -84,7 +85,7 @@ The physics tutoring ontology was implemented in OWL/RDF format, defining key cl
 </owl:DatatypeProperty>
 \end{lstlisting}
 
-The implementation of the ontology layer is crucial for providing the structural knowledge framework that guides our LLM tutor. Our ontology is implemented using the Resource Description Framework (RDF) and Web Ontology Language (OWL), which provide a standardized approach to knowledge representation \cite{horrocks2024owl}.
+The implementation of the ontology layer is very important for providing the structural knowledge framework that guides our LLM tutor. Our ontology is implemented using the Resource Description Framework (RDF) and Web Ontology Language (OWL), which provide a standardized approach to knowledge representation \cite{horrocks2024owl}.
 
 The ontology includes instances of physics concepts with their relationships:
 
@@ -116,7 +117,7 @@ The ontology includes instances of physics concepts with their relationships:
 \section{Knowledge Base Integration}
 \label{sec:kb-integration}
 
-Integrating the ontology with the LLM involves establishing connections between the structured knowledge in our ontology and the capabilities of the language model \cite{scibite2024ontologies}. This section details the implementation of this integration.
+Integrating the ontology with the LLM involves establishing connections between the structured knowledge in our ontology and the capabilities of the language model. This section details the implementation of this integration.
 
 \begin{itemize}
   \item \textbf{SPARQL Queries:} 
@@ -137,7 +138,7 @@ Integrating the ontology with the LLM involves establishing connections between 
   
   \item \textbf{Response Generation:} 
     \begin{itemize}
-      \item Ontology-guided response validation~\cite{hartl2024knowledge}
+      \item Ontology-guided response validation~
       \item Semantic consistency checking
       \item Personalized content adaptation
       \item Educational scaffolding integration
@@ -218,20 +219,12 @@ The frontend implementation follows modern web development practices and educati
       \item Real-time interaction handling
       \item Client-side validation
     \end{itemize}
-  
-  \item \textbf{3D Visualization:} 
-    \begin{itemize}
-      \item WebGL-based avatar rendering
-      \item Physics simulation integration
-      \item Interactive 3D models
-      \item Performance-optimized graphics
-    \end{itemize}
 \end{itemize}
 
 \subsection{Backend Implementation}
 \label{subsec:backend}
 
-The backend architecture emphasizes scalability and reliability, incorporating best practices from adaptive learning systems~\cite{wang2024adaptive}:
+The backend architecture emphasizes scalability and reliability, incorporating best practices from adaptive learning systems~\cite{rodriguez2024adaptive}:
 
 \begin{itemize}
   \item \textbf{Quart Server:} 
@@ -259,12 +252,12 @@ The backend architecture emphasizes scalability and reliability, incorporating b
     \end{itemize}
 \end{itemize}
 
-The backend server is implemented using Quart, an asynchronous Python web framework that is compatible with the Flask API \cite{pallets2024quart}. Quart was chosen for its support of asynchronous request handling, which is essential for managing multiple concurrent tutoring sessions while maintaining responsiveness.
+The backend server was initially implemented using Quart and later migrated to Fast due to how unstable and error prompt the Quart framework was. FastAPI is an asynchronous Python web framework that is compatible with the Flask API \cite{pallets2024quart}. FastAPI was chosen for its support of asynchronous request handling, which is essential for managing multiple concurrent tutoring sessions while maintaining responsiveness.
 
 \subsection{API Implementation}
 \label{subsec:api-implementation}
 
-The system implements a secure, asynchronous API using Quart to handle tutoring requests:
+The system implements a secure, asynchronous API using FastAPI to handle tutoring requests:
 
 \begin{lstlisting}[language=Python, caption=API Implementation, label=lst:api-implementation]
 @app.route('/api/ask', methods=['POST'])
@@ -488,47 +481,6 @@ Following best practices in educational technology, we implemented:
     \end{itemize}
 \end{itemize}
 
-\subsection{Learning Path Generation}
-\label{subsec:learning-path}
-
-The system generates personalized learning paths based on the ontology structure:
-
-\begin{lstlisting}[language=Python, caption=Learning Path Generation, label=lst:learning-path]
-def get_learning_path(self, target_concept: str, concept_graph: Dict[str, List[str]]) -> List[str]:
-    """
-    Generate a learning path to reach a target concept.
-    
-    Args:
-        target_concept: The concept the student wants to learn
-        concept_graph: Graph of concept prerequisites
-        
-    Returns:
-        List of concepts in order they should be learned
-    """
-    # Path will contain concepts in the order they should be learned
-    path = []
-    visited = set()
-    
-    def add_prerequisites(concept):
-        """Recursively add prerequisites to the path."""
-        if concept in visited:
-            return
-        
-        visited.add(concept)
-        
-        # First add all prerequisites
-        if concept in concept_graph:
-            for prereq in concept_graph[concept]:
-                add_prerequisites(prereq)
-        
-        # Then add this concept if not already understood
-        if concept not in self.understood_concepts:
-            path.append(concept)
-    
-    # Build the path starting from the target concept
-    add_prerequisites(target_concept)
-    return path
-\end{lstlisting}
 
 \section{Quality Assurance}
 \label{sec:qa}
@@ -561,7 +513,7 @@ Our quality assurance process includes comprehensive testing and monitoring stra
     \end{itemize}
 \end{itemize}
 
-This implementation provides a robust foundation for our ontology-enhanced LLM system, ensuring both technical excellence and educational effectiveness~\cite{liu2024ontology}. The next chapter will evaluate the system's performance and impact on learning outcomes. 
+This implementation provides a robust foundation for our ontology-enhanced LLM system, ensuring both technical excellence and educational effectiveness~\cite{scibite2024ontologies, horrocks2024owl}. The next chapter will evaluate the system's performance and impact on learning outcomes. 
 
 
 \section{Source Code and Live Demonstration}
@@ -623,34 +575,6 @@ The complete source code for the ontology-enhanced LLM system described in this 
   \item \textbf{dev-requirements.txt}: Development dependencies
 \end{itemize}
 
+Link to the repository: \url{https://github.com/9117KET/ai-avatar-ontology-integration-poc.git}
+
 The repository includes comprehensive documentation on system setup, configuration, and extension guidelines, making it accessible for researchers wishing to build upon this work.
-
-\subsection{Live Demonstration}
-\label{subsec:live-demo}
-
-A fully functional demonstration of the system is available at \url{https://ai-avatar-ontology-integration-poc.vercel.app/}. The live demo includes the following features:
-
-\begin{itemize}
-  \item Interactive physics tutor with Claude 3 LLM integration
-  \item Student modeling with adaptive learning paths
-  \item Ontology-based knowledge verification
-  \item Session management and interaction history
-  \item Web-based avatar interface for engagement
-\end{itemize}
-
-The live demonstration provides education researchers and instructors with a practical understanding of how ontology-enhanced LLMs can be applied in real educational settings. Visitors can experience the system's adaptive responses and how it maintains factual accuracy while providing personalized learning experiences.
-
-\subsection{Deployment Architecture}
-\label{subsec:deployment-arch}
-
-The production deployment uses a serverless architecture on Vercel:
-
-\begin{itemize}
-  \item Serverless API functions for scalable backend services
-  \item Asynchronous Quart framework (Flask-compatible) for request handling
-  \item JWT-based session management for security
-  \item Environment-based configuration for deployment flexibility
-  \item Integrated CI/CD pipeline through Vercel deployment
-\end{itemize}
-
-This architecture ensures the system can scale to support multiple simultaneous users while maintaining low response latency, which is critical for educational applications where engagement depends on responsive interactions. The system leverages Vercel's edge network for fast content delivery and scalable backend processing, as specified in the \texttt{vercel.json} configuration file.

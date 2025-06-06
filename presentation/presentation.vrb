@@ -1,0 +1,50 @@
+\frametitle{Implementation: Key Code Snippets}
+
+\begin{columns}
+
+\column{0.5\textwidth}
+\begin{block}{Ontology Integration}
+\begin{verbatim}
+def verify_with_ontology(query, response):
+    # Extract claims from LLM response
+    claims = extract_claims(response)
+
+    # Generate SPARQL queries
+    SPARQL_queries = generate_queries(claims)
+
+    # Verify against physics ontology
+    verified_results = []
+    for query in SPARQL_queries:
+        result = ontology.query(query)
+        verified_results.append(result)
+
+    return analyse_verification(verified_results)
+\end{verbatim}
+\end{block}
+
+\column{0.5\textwidth}
+\begin{block}{Adaptive Student Model}
+\begin{verbatim}
+class StudentModel:
+    def \_\_init\_\_(self, student_id):
+        self.student_id = student_id
+        self.concept_mastery = {}
+        self.learning_path = []
+
+    def update_mastery(self, concept, score):
+        # Update mastery level based on
+        # interaction results
+        self.concept_mastery[concept] =
+            update_Bayesian_estimate(
+                self.concept_mastery.get(concept, 0.5),
+                score
+            )
+\end{verbatim}
+\end{block}
+
+\end{columns}
+
+\begin{alertblock}{Additional Resources}
+Full codebase available at: \url{https://github.com/user/ontology-llm-stem}\\
+Interactive demo: \url{https://ontology-llm-demo.example.com}
+\end{alertblock}

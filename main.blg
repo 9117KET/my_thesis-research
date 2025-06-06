@@ -1,18 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
-[1] Config.pm:310> INFO - Logfile is 'main.blg'
-[241] biber-MSWIN64:340> INFO - === 
-[307] Biber.pm:419> INFO - Reading 'main.bcf'
-[472] Biber.pm:979> INFO - Found 27 citekeys in bib section 0
-[488] Biber.pm:4419> INFO - Processing section 0
-[508] Biber.pm:4610> INFO - Looking for bibtex file './bibliography/bibliography.bib' for section 0
-[600] bibtex.pm:1713> INFO - LaTeX decoding ...
-[690] bibtex.pm:1519> INFO - Found BibTeX data source './bibliography/bibliography.bib'
-[887] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[887] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[887] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[887] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[926] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[943] bbl.pm:763> INFO - Output to main.bbl
-[943] Biber.pm:131> WARN - I didn't find a database entry for 'wang2024adaptive' (section 0)
-[944] Biber.pm:131> WARN - I didn't find a database entry for 'liu2024ontology' (section 0)
-[944] Biber.pm:133> INFO - WARNINGS: 2
+[0] Config.pm:310> INFO - Logfile is 'main.blg'
+[132] biber-MSWIN64:340> INFO - === 
+[180] Biber.pm:419> INFO - Reading 'main.bcf'
+[343] Biber.pm:979> INFO - Found 26 citekeys in bib section 0
+[361] Biber.pm:4419> INFO - Processing section 0
+[379] Biber.pm:4610> INFO - Looking for bibtex file './bibliography/bibliography.bib' for section 0
+[466] bibtex.pm:1713> INFO - LaTeX decoding ...
+[555] bibtex.pm:1519> INFO - Found BibTeX data source './bibliography/bibliography.bib'
+[880] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[881] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[881] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[881] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[923] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[944] bbl.pm:763> INFO - Output to main.bbl

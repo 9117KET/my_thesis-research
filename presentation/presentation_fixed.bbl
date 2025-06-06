@@ -1,0 +1,44 @@
+\begin{thebibliography}{HPSvH24}
+
+\bibitem[CR24]{chen2024comparing}
+Wenxin Chen and Blake Roberts.
+\newblock Comparing evaluation methodologies for large language models in
+  educational settings.
+\newblock {\em Computers and Education: Artificial Intelligence}, 5:100073,
+  2024.
+
+\bibitem[HPSvH24]{horrocks2024owl}
+Ian Horrocks, Peter~F. Patel-Schneider, and Frank van Harmelen.
+\newblock From {SHIQ} and {RDF} to {OWL}: The making of a web ontology
+  language.
+\newblock {\em Journal of Web Semantics}, 2024.
+
+\bibitem[Jon24]{pallets2024quart}
+Philip Jones.
+\newblock Quart: An asyncio reimplementation of the flask web framework.
+\newblock {\em Pallets Projects}, 2024.
+
+\bibitem[RDK24]{rodriguez2024adaptive}
+Carlos Alario-Hoyos Rodriguez and Carlos Delgado~Kloos.
+\newblock Improving the learning-teaching process through adaptive learning
+  systems.
+\newblock {\em Smart Learning Environments}, 11(13), 2024.
+
+\bibitem[RH24]{rivera2024impact}
+John Rivera and Elena Hernandez.
+\newblock Impact assessment of ai tutors on student learning outcomes.
+\newblock {\em International Journal of Artificial Intelligence in Education},
+  34(2):215--239, 2024.
+
+\bibitem[Sci24]{scibite2024ontologies}
+SciBite.
+\newblock Are ontologies still relevant in the age of {LLMs}?
+\newblock {\em SciBite Knowledge Hub}, 2024.
+
+\bibitem[WM24]{wilson2024educational}
+Daniel~R. Wilson and Maria Martinez.
+\newblock Educational technology assessment frameworks: A systematic review.
+\newblock {\em Journal of Educational Technology Systems}, 52(3):281--305,
+  2024.
+
+\end{thebibliography}

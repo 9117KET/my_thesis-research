@@ -83,6 +83,39 @@
       \verb https://www.sciencedirect.com/science/article/pii/S2666920X23000687
       \endverb
     \endentry
+    \entry{attention2025heads}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8edcdf26cace6add49624841b708fa35}{%
+           family={Editorial},
+           familyi={E\bibinitperiod},
+           given={Patterns},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{8edcdf26cace6add49624841b708fa35}
+      \strng{fullhash}{8edcdf26cace6add49624841b708fa35}
+      \strng{bibnamehash}{8edcdf26cace6add49624841b708fa35}
+      \strng{authorbibnamehash}{8edcdf26cace6add49624841b708fa35}
+      \strng{authornamehash}{8edcdf26cace6add49624841b708fa35}
+      \strng{authorfullhash}{8edcdf26cace6add49624841b708fa35}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Patterns}
+      \field{number}{2}
+      \field{title}{Attention heads of large language models}
+      \field{volume}{6}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.1016/j.patter.2025.100024
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cell.com/patterns/fulltext/S2666-3899(25)00024-8
+      \endverb
+      \verb{url}
+      \verb https://www.cell.com/patterns/fulltext/S2666-3899(25)00024-8
+      \endverb
+    \endentry
     \entry{medium2024hallucination}{article}{}
       \name{author}{1}{}{%
         {{hash=16a6991cd51f6cec1cb53f20c64c582d}{%
@@ -282,6 +315,46 @@
       \verb https://dl.acm.org/doi/10.1145/3571730
       \endverb
     \endentry
+    \entry{challenging2024cognitive}{article}{}
+      \name{author}{3}{}{%
+        {{hash=aa4a83405eb5652cfc269f0942daea0a}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ad22c553d6f9b25c0f871a8f55be11a8}{%
+           family={Peterson},
+           familyi={P\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7dd649d84847634e415c312a17549e72}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{40a3a44adb21c2dc8cf3d27225c510db}
+      \strng{fullhash}{40a3a44adb21c2dc8cf3d27225c510db}
+      \strng{bibnamehash}{40a3a44adb21c2dc8cf3d27225c510db}
+      \strng{authorbibnamehash}{40a3a44adb21c2dc8cf3d27225c510db}
+      \strng{authornamehash}{40a3a44adb21c2dc8cf3d27225c510db}
+      \strng{authorfullhash}{40a3a44adb21c2dc8cf3d27225c510db}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Educational Technology Research}
+      \field{number}{3}
+      \field{title}{Challenging Cognitive Load Theory: The Role of Educational Neuroscience and Artificial Intelligence}
+      \field{volume}{12}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://pdfs.semanticscholar.org/6cc9/21742fd8ce06a59538abd6ef51c35ac0c1cc.pdf
+      \endverb
+      \verb{url}
+      \verb https://pdfs.semanticscholar.org/6cc9/21742fd8ce06a59538abd6ef51c35ac0c1cc.pdf
+      \endverb
+    \endentry
     \entry{pallets2024quart}{article}{}
       \name{author}{1}{}{%
         {{hash=1208c8d53b3b2db032aa363d023cc0c6}{%
@@ -368,43 +441,6 @@
       \verb https://journals.sagepub.com/doi/full/10.3102/0013189X211028239
       \endverb
     \endentry
-    \entry{kim2024assessment}{article}{}
-      \name{author}{2}{}{%
-        {{hash=1d3e18f6d0ee56087662662060dce509}{%
-           family={Kim},
-           familyi={K\bibinitperiod},
-           given={Soo-Jin},
-           giveni={S\bibinithyphendelim J\bibinitperiod}}}%
-        {{hash=23d11af242f6f43ea72bf08181dbd058}{%
-           family={Patel},
-           familyi={P\bibinitperiod},
-           given={Vikram},
-           giveni={V\bibinitperiod}}}%
-      }
-      \strng{namehash}{f6910690c56b1948c2416e4eb5503b69}
-      \strng{fullhash}{f6910690c56b1948c2416e4eb5503b69}
-      \strng{bibnamehash}{f6910690c56b1948c2416e4eb5503b69}
-      \strng{authorbibnamehash}{f6910690c56b1948c2416e4eb5503b69}
-      \strng{authornamehash}{f6910690c56b1948c2416e4eb5503b69}
-      \strng{authorfullhash}{f6910690c56b1948c2416e4eb5503b69}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Learning Analytics}
-      \field{number}{1}
-      \field{title}{Assessment Frameworks for AI-Enhanced Educational Systems}
-      \field{volume}{11}
-      \field{year}{2024}
-      \field{pages}{45\bibrangedash 67}
-      \range{pages}{23}
-      \verb{urlraw}
-      \verb https://learning-analytics.info/index.php/JLA/article/view/7182
-      \endverb
-      \verb{url}
-      \verb https://learning-analytics.info/index.php/JLA/article/view/7182
-      \endverb
-    \endentry
     \entry{enterprise2024ontologies}{article}{}
       \name{author}{1}{}{%
         {{hash=a0af3aa8f91b6c7e4ee92307534e20d2}{%
@@ -431,43 +467,6 @@
       \endverb
       \verb{url}
       \verb https://enterprise-knowledge.com/the-role-of-ontologies-with-llms/
-      \endverb
-    \endentry
-    \entry{lewis2024neuro}{article}{}
-      \name{author}{2}{}{%
-        {{hash=8d8d8d1635d712a215b64ebfeaa2ff2b}{%
-           family={Lewis},
-           familyi={L\bibinitperiod},
-           given={Marcus},
-           giveni={M\bibinitperiod}}}%
-        {{hash=3aa3892a0691b3e5db33d44c25922ac6}{%
-           family={Johnson},
-           familyi={J\bibinitperiod},
-           given={Rachel\bibnamedelima T.},
-           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-      }
-      \strng{namehash}{38ba34a93bad821c5f167b78c2edce83}
-      \strng{fullhash}{38ba34a93bad821c5f167b78c2edce83}
-      \strng{bibnamehash}{38ba34a93bad821c5f167b78c2edce83}
-      \strng{authorbibnamehash}{38ba34a93bad821c5f167b78c2edce83}
-      \strng{authornamehash}{38ba34a93bad821c5f167b78c2edce83}
-      \strng{authorfullhash}{38ba34a93bad821c5f167b78c2edce83}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{AI and Education}
-      \field{number}{2}
-      \field{title}{Neuro-Symbolic Integration in Educational AI: Current Challenges and Future Prospects}
-      \field{volume}{3}
-      \field{year}{2024}
-      \field{pages}{189\bibrangedash 214}
-      \range{pages}{26}
-      \verb{urlraw}
-      \verb https://doi.org/10.1007/s41979-023-00105-0
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1007/s41979-023-00105-0
       \endverb
     \endentry
     \entry{nananukul2023halo}{article}{}
@@ -776,41 +775,75 @@
       \verb https://aclanthology.org/2024.findings-acl.813
       \endverb
     \endentry
-    \entry{wilson2024educational}{article}{}
-      \name{author}{2}{}{%
-        {{hash=fe8a0165694c842c1e6256f37fd840e1}{%
-           family={Wilson},
+    \entry{nature2024cognitive}{article}{}
+      \name{author}{3}{}{%
+        {{hash=49a19e08791a3dc09c932ff975949361}{%
+           family={Wang},
            familyi={W\bibinitperiod},
-           given={Daniel\bibnamedelima R.},
-           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
-        {{hash=cbdb32177e151ae1469d8b7e03b50f13}{%
-           family={Martinez},
-           familyi={M\bibinitperiod},
-           given={Maria},
-           giveni={M\bibinitperiod}}}%
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a0b47a66c48bc7434c754ae9cb5c8e6e}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=35dc3f6af5f050688c0a18383d7804a1}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Ling},
+           giveni={L\bibinitperiod}}}%
       }
-      \strng{namehash}{f6a3493c3e44a98204f50b946b8a448a}
-      \strng{fullhash}{f6a3493c3e44a98204f50b946b8a448a}
-      \strng{bibnamehash}{f6a3493c3e44a98204f50b946b8a448a}
-      \strng{authorbibnamehash}{f6a3493c3e44a98204f50b946b8a448a}
-      \strng{authornamehash}{f6a3493c3e44a98204f50b946b8a448a}
-      \strng{authorfullhash}{f6a3493c3e44a98204f50b946b8a448a}
+      \strng{namehash}{343ee76885ca10bd6637ae49d62300d3}
+      \strng{fullhash}{343ee76885ca10bd6637ae49d62300d3}
+      \strng{bibnamehash}{343ee76885ca10bd6637ae49d62300d3}
+      \strng{authorbibnamehash}{343ee76885ca10bd6637ae49d62300d3}
+      \strng{authornamehash}{343ee76885ca10bd6637ae49d62300d3}
+      \strng{authorfullhash}{343ee76885ca10bd6637ae49d62300d3}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Educational Technology Systems}
-      \field{number}{3}
-      \field{title}{Educational Technology Assessment Frameworks: A Systematic Review}
-      \field{volume}{52}
+      \field{journaltitle}{Scientific Reports}
+      \field{number}{1}
+      \field{title}{Optimizing cognitive load and learning adaptability with adaptive microlearning systems}
+      \field{volume}{14}
       \field{year}{2024}
-      \field{pages}{281\bibrangedash 305}
-      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1038/s41598-024-77122-1
+      \endverb
       \verb{urlraw}
-      \verb https://journals.sagepub.com/doi/10.1177/00472395231189632
+      \verb https://www.nature.com/articles/s41598-024-77122-1
       \endverb
       \verb{url}
-      \verb https://journals.sagepub.com/doi/10.1177/00472395231189632
+      \verb https://www.nature.com/articles/s41598-024-77122-1
+      \endverb
+    \endentry
+    \entry{meta2024megalodon}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b3480ba90a54e0eeb1bb12457a2635ea}{%
+           family={Wiggers},
+           familyi={W\bibinitperiod},
+           given={Kyle},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{b3480ba90a54e0eeb1bb12457a2635ea}
+      \strng{fullhash}{b3480ba90a54e0eeb1bb12457a2635ea}
+      \strng{bibnamehash}{b3480ba90a54e0eeb1bb12457a2635ea}
+      \strng{authorbibnamehash}{b3480ba90a54e0eeb1bb12457a2635ea}
+      \strng{authornamehash}{b3480ba90a54e0eeb1bb12457a2635ea}
+      \strng{authorfullhash}{b3480ba90a54e0eeb1bb12457a2635ea}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{VentureBeat}
+      \field{title}{Meta challenges transformer architecture with {Megalodon} {LLM}}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://venturebeat.com/ai/meta-challenges-transformer-architecture-with-megalodon-llm/
+      \endverb
+      \verb{url}
+      \verb https://venturebeat.com/ai/meta-challenges-transformer-architecture-with-megalodon-llm/
       \endverb
     \endentry
     \entry{zhang2024survey}{article}{}
@@ -847,41 +880,43 @@
       \verb https://arxiv.org/abs/2401.11817
       \endverb
     \endentry
-    \entry{zhang2024future}{article}{}
-      \name{author}{2}{}{%
-        {{hash=33ac89107822f0f2dfeb56d5f50efcea}{%
+    \entry{hallucination2024survey}{article}{}
+      \name{author}{3}{}{%
+        {{hash=25bbf4047d900f3760c65b01ee899dba}{%
            family={Zhang},
            familyi={Z\bibinitperiod},
-           given={Mei},
-           giveni={M\bibinitperiod}}}%
-        {{hash=c7970665055265034f103f254067e7e1}{%
-           family={Thompson},
-           familyi={T\bibinitperiod},
-           given={Kevin},
-           giveni={K\bibinitperiod}}}%
+           given={Wei},
+           giveni={W\bibinitperiod}}}%
+        {{hash=672118cf5ff2cef0f99169ded963b4ea}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Fei},
+           giveni={F\bibinitperiod}}}%
+        {{hash=5047f89fa1c47d3090a3b6753722bcf3}{%
+           family={Shao},
+           familyi={S\bibinitperiod},
+           given={Zihan},
+           giveni={Z\bibinitperiod}}}%
       }
-      \strng{namehash}{0dc7debceb5989ff478e5b3f153caaa8}
-      \strng{fullhash}{0dc7debceb5989ff478e5b3f153caaa8}
-      \strng{bibnamehash}{0dc7debceb5989ff478e5b3f153caaa8}
-      \strng{authorbibnamehash}{0dc7debceb5989ff478e5b3f153caaa8}
-      \strng{authornamehash}{0dc7debceb5989ff478e5b3f153caaa8}
-      \strng{authorfullhash}{0dc7debceb5989ff478e5b3f153caaa8}
+      \strng{namehash}{a82332dcccb6a8d5c83be577a7bd4980}
+      \strng{fullhash}{a82332dcccb6a8d5c83be577a7bd4980}
+      \strng{bibnamehash}{a82332dcccb6a8d5c83be577a7bd4980}
+      \strng{authorbibnamehash}{a82332dcccb6a8d5c83be577a7bd4980}
+      \strng{authornamehash}{a82332dcccb6a8d5c83be577a7bd4980}
+      \strng{authorfullhash}{a82332dcccb6a8d5c83be577a7bd4980}
       \field{sortinit}{Z}
       \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Educational Technology Research and Development}
-      \field{number}{1}
-      \field{title}{Future Directions in AI for Education: A Systematic Review of Emerging Trends}
-      \field{volume}{72}
+      \field{journaltitle}{arXiv preprint}
+      \field{title}{A Comprehensive Survey of Hallucination Mitigation Techniques in Large Language Models}
+      \field{volume}{2401.01313}
       \field{year}{2024}
-      \field{pages}{96\bibrangedash 128}
-      \range{pages}{33}
       \verb{urlraw}
-      \verb https://link.springer.com/article/10.1007/s11423-023-10254-9
+      \verb https://arxiv.org/abs/2401.01313
       \endverb
       \verb{url}
-      \verb https://link.springer.com/article/10.1007/s11423-023-10254-9
+      \verb https://arxiv.org/abs/2401.01313
       \endverb
     \endentry
     \entry{zuo2025medhallbench}{article}{}
@@ -919,8 +954,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{liu2024ontology}
-  \missing{wang2024adaptive}
 \endrefsection
 \endinput
 

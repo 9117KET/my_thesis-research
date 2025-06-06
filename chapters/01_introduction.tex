@@ -13,18 +13,22 @@ In STEM education, where accuracy is extremely important, such hallucinations po
 involving technical concepts \cite{huang2024survey}. This unreliability limits their deployment in educational settings.
 
 % WHAT - Problem statement and proposed solution
-This thesis addresses a fundamental question: How can we harness LLMs' potential for STEM education while ensuring their responses 
-remain accurate and reliable? Traditional approaches fall short in two ways:
+This thesis addresses a fundamental question: \textbf{How can we harness LLMs' potential(Natural Language Understanding) for STEM education while ensuring their responses 
+remain accurate and reliable?}?
+
+Traditional approaches fall short:
 \begin{itemize}
-    \item Pure LLM-based systems risk propagating misinformation through hallucinations \cite{su2024confabulation}
+    \item Pure LLM-based systems risk propagating misinformation through hallucinations 
     \item Rule-based systems offer accuracy but lack the natural interaction capabilities needed for effective education
+    \item Prompt engineering is complex and requires domain Knowledge
+    \item Fine-tuning LLMs is resource-intensive, time-consuming, and requires domain Knowledge 
 \end{itemize}
 
-We propose an innovative solution: integrating ontological knowledge structures with LLM reasoning capabilities. This approach combines:
+Through this thesis, we are proposing a hybrid solution: integrating ontological knowledge structures with LLM reasoning capabilities. This approach combines:
 \begin{itemize}
-    \item The structured precision of domain-specific ontologies \cite{nananukul2023halo}
+    \item The structured precision of domain-specific ontologies
     \item The natural language understanding of LLMs
-    \item Real-time verification mechanisms \cite{hartl2024knowledge}
+    \item Real-time verification mechanisms
 \end{itemize}
 
 % HOW - Research objectives and approach
@@ -36,6 +40,7 @@ Our research focuses on four primary objectives:
     \item Develop a framework that integrates ontological knowledge with LLM reasoning
     \item Build an adaptive system that provides personalized, accurate learning experiences
     \item Create mechanism that reduces the rate of hallucinations using ontological constraints
+    \item Implement a real-time verification system that ensures accuracy and reliability
 \end{itemize}
 
 \section{Research Contributions}
@@ -69,10 +74,10 @@ This work advances the field through several key contributions:
 Our approach builds upon recent advances in several areas:
 
 \begin{itemize}
-    \item \textbf{LLM Architecture:} Latest developments in transformer models and attention mechanisms \cite{zhang2024survey}
-    \item \textbf{Ontology Engineering:} Semantic web technologies and knowledge representation \cite{doubletaken2024llm}
-    \item \textbf{Hallucination Mitigation:} Recent techniques in fact verification and constraint satisfaction \cite{ji2023survey}
-    \item \textbf{Educational Technology:} Adaptive learning systems and cognitive load theory
+    \item \textbf{LLM Architecture:} Latest developments in transformer models and attention mechanisms \cite{attention2025heads, meta2024megalodon}
+    \item \textbf{Ontology Engineering:} Semantic web technologies and knowledge representation \cite{horrocks2024owl, scibite2024ontologies}
+    \item \textbf{Hallucination Mitigation:} Recent techniques in fact verification and constraint satisfaction \cite{hallucination2024survey, zhang2024survey}
+    \item \textbf{Educational Technology:} Adaptive learning systems and cognitive load theory \cite{nature2024cognitive, rodriguez2024adaptive, challenging2024cognitive}
 \end{itemize}
 
 \section{Research Challenges}
@@ -122,12 +127,12 @@ Ontology-based approaches are particularly well-suited for STEM education becaus
     \item Facilitate cross-domain consistency and knowledge integration
 \end{itemize}
 
-By grounding LLM reasoning in ontological structures, we can systematically reduce hallucinations and deliver reliable, personalized educational content. This makes ontology-based mitigation the most promising strategy for high-stakes domains like STEM education.
+By grounding LLM reasoning in ontological structures, we can systematically reduce hallucinations and deliver reliable, personalized educational content. This makes ontology-based mitigation the most promising strategy for domains like STEM education.
 
 
 \section{Thesis Structure}
 
-The dissertation is organized as follows:
+This thesis is organized as follows:
 
 \begin{itemize}
     \item Chapter \ref{chap:background} examines the theoretical foundations and related work in ontology-enhanced LLMs
@@ -137,4 +142,4 @@ The dissertation is organized as follows:
     \item Chapter \ref{chap:conclusion} discusses implications and future research directions
 \end{itemize}
 
-To facilitate further research, the complete source code for the ontology-enhanced LLM system developed in this thesis research process is available on GitHub at \url{https://github.com/9117KET/ai-avatar-ontology-integration-poc.git}. Additionally, a live demonstration of the system can be accessed at \url{https://ai-avatar-ontology-integration-poc.vercel.app/}. Further details about the repository structure and deployment are provided in Chapter \ref{chap:implementation}.
+To facilitate further research, the complete source code for the ontology-enhanced LLM system developed in this thesis research process is available on GitHub at \url{https://github.com/9117KET/ai-avatar-ontology-integration-poc.git}. Further details about the repository structure and deployment are provided in Chapter \ref{chap:implementation}.

@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.3)  13 MAY 2025 15:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.3)  14 MAY 2025 16:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./presentation.tex
-(presentation.tex
+**./presentation_fixed.tex
+(presentation_fixed.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\kinlo\latex\tex/latex/beamer\beamer.cls
@@ -751,27 +751,27 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count345
 \l__pdf_internal_box=\box81
 )
-(presentation.aux)
-\openout1 = `presentation.aux'.
+(presentation_fixed.aux)
+\openout1 = `presentation_fixed.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -828,64 +828,64 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Users\kinlo\latex\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 61.
- (presentation.out)
-(presentation.out)
+Package hyperref Info: Link coloring ON on input line 58.
+
+(presentation_fixed.out) (presentation_fixed.out)
 \@outlinefile=\write5
-\openout5 = `presentation.out'.
+\openout5 = `presentation_fixed.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 61.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 58.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 61.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 58.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 61.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 58.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 61.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 58.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 61.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 61.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 58.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 58.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 61.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 58.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 61.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 61.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 58.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 58.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 61.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 58.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 61.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 61.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 58.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 58.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 61.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 58.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 61.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 58.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 61.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 58.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 61.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 58.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 61.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 58.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 61.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 58.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 61.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 58.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 61.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 58.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 61.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 61.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 58.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 58.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 6
-1.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 5
+8.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 6
-1.
+(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 5
+8.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 61.
+ut line 58.
 
 (C:\Users\kinlo\latex\tex/latex/translator\translator-basic-dictionary-English.
 dict
@@ -910,79 +910,65 @@ Dictionary: translator-numbers-dictionary, Language: English
 (C:\Users\kinlo\latex\tex/latex/translator\translator-theorem-dictionary-Englis
 h.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (presentation.nav)
-<bsc-logo.png, id=42, 195.06209pt x 41.15375pt>
+) (presentation_fixed.nav)
+<bsc-logo.png, id=50, 195.06209pt x 41.15375pt>
 File: bsc-logo.png Graphic file (type png)
 <use bsc-logo.png>
-Package pdftex.def Info: bsc-logo.png  used on input line 64.
+Package pdftex.def Info: bsc-logo.png  used on input line 61.
 (pdftex.def)             Requested size: 80.91948pt x 17.07182pt.
  [1
 
 {C:/Users/kinlo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./bsc-logo.p
-ng>] (presentation.toc)
+ng>] (presentation_fixed.toc)
 File: bsc-logo.png Graphic file (type png)
 <use bsc-logo.png>
-Package pdftex.def Info: bsc-logo.png  used on input line 73.
+Package pdftex.def Info: bsc-logo.png  used on input line 69.
 (pdftex.def)             Requested size: 80.91948pt x 17.07182pt.
  [2
 
-] (presentation.toc)
+]
 File: bsc-logo.png Graphic file (type png)
 <use bsc-logo.png>
-Package pdftex.def Info: bsc-logo.png  used on input line 77.
+Package pdftex.def Info: bsc-logo.png  used on input line 94.
 (pdftex.def)             Requested size: 80.91948pt x 17.07182pt.
-
-[3
+ [3
 
 ]
 File: bsc-logo.png Graphic file (type png)
 <use bsc-logo.png>
-Package pdftex.def Info: bsc-logo.png  used on input line 99.
+Package pdftex.def Info: bsc-logo.png  used on input line 94.
 (pdftex.def)             Requested size: 80.91948pt x 17.07182pt.
- [4
+
+[4
 
 ]
 File: bsc-logo.png Graphic file (type png)
 <use bsc-logo.png>
-Package pdftex.def Info: bsc-logo.png  used on input line 99.
+Package pdftex.def Info: bsc-logo.png  used on input line 94.
 (pdftex.def)             Requested size: 80.91948pt x 17.07182pt.
  [5
 
 ]
 File: bsc-logo.png Graphic file (type png)
 <use bsc-logo.png>
-Package pdftex.def Info: bsc-logo.png  used on input line 99.
+Package pdftex.def Info: bsc-logo.png  used on input line 112.
 (pdftex.def)             Requested size: 80.91948pt x 17.07182pt.
  [6
 
 ]
-File: bsc-logo.png Graphic file (type png)
-<use bsc-logo.png>
-Package pdftex.def Info: bsc-logo.png  used on input line 120.
-(pdftex.def)             Requested size: 80.91948pt x 17.07182pt.
- [7
-
-]
-File: bsc-logo.png Graphic file (type png)
-<use bsc-logo.png>
-Package pdftex.def Info: bsc-logo.png  used on input line 120.
-(pdftex.def)             Requested size: 80.91948pt x 17.07182pt.
- [8
-
-]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 154
+LaTeX Font Info:    Trying to load font information for U+msa on input line 143
 .
  (C:\Users\kinlo\latex\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 154
+LaTeX Font Info:    Trying to load font information for U+msb on input line 143
 .
 
 (C:\Users\kinlo\latex\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 154.
+ut line 143.
 
 (C:\Users\kinlo\latex\tex/latex/sansmathaccent\ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
@@ -990,115 +976,166 @@ thkerncmss.
 )
 File: bsc-logo.png Graphic file (type png)
 <use bsc-logo.png>
-Package pdftex.def Info: bsc-logo.png  used on input line 154.
+Package pdftex.def Info: bsc-logo.png  used on input line 143.
 (pdftex.def)             Requested size: 80.91948pt x 17.07182pt.
- [9
+ [7
 
 ]
-(presentation.toc)
 File: bsc-logo.png Graphic file (type png)
 <use bsc-logo.png>
-Package pdftex.def Info: bsc-logo.png  used on input line 157.
+Package pdftex.def Info: bsc-logo.png  used on input line 172.
+(pdftex.def)             Requested size: 80.91948pt x 17.07182pt.
+ [8
+
+]
+File: bsc-logo.png Graphic file (type png)
+<use bsc-logo.png>
+Package pdftex.def Info: bsc-logo.png  used on input line 204.
+(pdftex.def)             Requested size: 80.91948pt x 17.07182pt.
+
+[9
+
+]
+File: bsc-logo.png Graphic file (type png)
+<use bsc-logo.png>
+Package pdftex.def Info: bsc-logo.png  used on input line 222.
 (pdftex.def)             Requested size: 80.91948pt x 17.07182pt.
  [10
 
 ]
 File: bsc-logo.png Graphic file (type png)
 <use bsc-logo.png>
-Package pdftex.def Info: bsc-logo.png  used on input line 183.
+Package pdftex.def Info: bsc-logo.png  used on input line 222.
 (pdftex.def)             Requested size: 80.91948pt x 17.07182pt.
  [11
 
-] (presentation.toc)
+]
 File: bsc-logo.png Graphic file (type png)
 <use bsc-logo.png>
-Package pdftex.def Info: bsc-logo.png  used on input line 185.
+Package pdftex.def Info: bsc-logo.png  used on input line 222.
 (pdftex.def)             Requested size: 80.91948pt x 17.07182pt.
  [12
 
 ]
 File: bsc-logo.png Graphic file (type png)
 <use bsc-logo.png>
-Package pdftex.def Info: bsc-logo.png  used on input line 217.
+Package pdftex.def Info: bsc-logo.png  used on input line 222.
 (pdftex.def)             Requested size: 80.91948pt x 17.07182pt.
  [13
 
 ]
 File: bsc-logo.png Graphic file (type png)
 <use bsc-logo.png>
-Package pdftex.def Info: bsc-logo.png  used on input line 239.
+Package pdftex.def Info: bsc-logo.png  used on input line 222.
 (pdftex.def)             Requested size: 80.91948pt x 17.07182pt.
  [14
 
 ]
 File: bsc-logo.png Graphic file (type png)
 <use bsc-logo.png>
-Package pdftex.def Info: bsc-logo.png  used on input line 239.
+Package pdftex.def Info: bsc-logo.png  used on input line 256.
 (pdftex.def)             Requested size: 80.91948pt x 17.07182pt.
  [15
 
 ]
 File: bsc-logo.png Graphic file (type png)
 <use bsc-logo.png>
-Package pdftex.def Info: bsc-logo.png  used on input line 239.
+Package pdftex.def Info: bsc-logo.png  used on input line 290.
 (pdftex.def)             Requested size: 80.91948pt x 17.07182pt.
  [16
 
 ]
+<../results_final/model_comparison.png, id=654, 1075.3776pt x 424.9476pt>
+File: ../results_final/model_comparison.png Graphic file (type png)
+<use ../results_final/model_comparison.png>
+Package pdftex.def Info: ../results_final/model_comparison.png  used on input l
+ine 313.
+(pdftex.def)             Requested size: 171.14764pt x 67.62988pt.
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
+313.
+
+(C:\Users\kinlo\latex\tex/latex/base\ts1cmss.fd
+File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
 File: bsc-logo.png Graphic file (type png)
 <use bsc-logo.png>
-Package pdftex.def Info: bsc-logo.png  used on input line 239.
+Package pdftex.def Info: bsc-logo.png  used on input line 313.
 (pdftex.def)             Requested size: 80.91948pt x 17.07182pt.
+ [17
 
-[17
-
-]
+ <../results_final/model_comparison.png>]
 File: bsc-logo.png Graphic file (type png)
 <use bsc-logo.png>
-Package pdftex.def Info: bsc-logo.png  used on input line 239.
+Package pdftex.def Info: bsc-logo.png  used on input line 346.
 (pdftex.def)             Requested size: 80.91948pt x 17.07182pt.
  [18
 
 ]
 File: bsc-logo.png Graphic file (type png)
 <use bsc-logo.png>
-Package pdftex.def Info: bsc-logo.png  used on input line 275.
+Package pdftex.def Info: bsc-logo.png  used on input line 369.
 (pdftex.def)             Requested size: 80.91948pt x 17.07182pt.
  [19
 
-] (presentation.toc)
+]
 File: bsc-logo.png Graphic file (type png)
 <use bsc-logo.png>
-Package pdftex.def Info: bsc-logo.png  used on input line 280.
+Package pdftex.def Info: bsc-logo.png  used on input line 385.
 (pdftex.def)             Requested size: 80.91948pt x 17.07182pt.
  [20
 
-])
-Runaway argument?
-\@kernel@before@enddocument \UseOneTimeHook {enddocument}\@kernel@after@enddocu
-ment \ETC.
-! File ended while scanning use of \beamer@collect@@body.
-<inserted text> 
-                \par 
-<*> ./presentation.tex
-                      
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
+] (presentation_fixed.bbl)
+File: bsc-logo.png Graphic file (type png)
+<use bsc-logo.png>
+Package pdftex.def Info: bsc-logo.png  used on input line 403.
+(pdftex.def)             Requested size: 80.91948pt x 17.07182pt.
+ [21
 
-! Emergency stop.
-<*> ./presentation.tex
-                      
-*** (job aborted, no legal \end found)
+ <C:/Users/kinlo/latex/tex/latex/beamer/beamericonarticle.pdf>]
+File: bsc-logo.png Graphic file (type png)
+<use bsc-logo.png>
+Package pdftex.def Info: bsc-logo.png  used on input line 403.
+(pdftex.def)             Requested size: 80.91948pt x 17.07182pt.
+ [22
 
- 
+
+]
+\tf@nav=\write6
+\openout6 = `presentation_fixed.nav'.
+
+\tf@toc=\write7
+\openout7 = `presentation_fixed.toc'.
+
+\tf@snm=\write8
+\openout8 = `presentation_fixed.snm'.
+
+ (presentation_fixed.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+ ***********
+Package rerunfilecheck Info: File `presentation_fixed.out' has not changed.
+(rerunfilecheck)             Checksum: D22E60181647CC4BAEBF2F4ED965933A;621.
+ ) 
 Here is how much of TeX's memory you used:
- 25013 strings out of 474479
- 496944 string characters out of 5754848
- 1950542 words of memory out of 5000000
- 46746 multiletter control sequences out of 15000+600000
- 565725 words of font info for 63 fonts, out of 8000000 for 9000
+ 25111 strings out of 474479
+ 501118 string characters out of 5754848
+ 1945542 words of memory out of 5000000
+ 46833 multiletter control sequences out of 15000+600000
+ 567061 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,19n,123p,416b,703s stack positions out of 10000i,1000n,20000p,200000b,200000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 128i,19n,123p,422b,770s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\kinlo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss
+1000.pk> <C:\Users\kinlo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\tcss1095.pk><C:/Users/kinlo/latex/fonts/type1/public/amsfonts/cm/cmss10.pfb><
+C:/Users/kinlo/latex/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/kinlo/
+latex/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/kinlo/latex/fonts/type
+1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/kinlo/latex/fonts/type1/public/amsf
+onts/cm/cmssi10.pfb><C:/Users/kinlo/latex/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb>
+Output written on presentation_fixed.pdf (22 pages, 430671 bytes).
+PDF statistics:
+ 914 PDF objects out of 1000 (max. 8388607)
+ 58 named destinations out of 1000 (max. 500000)
+ 737 words of extra memory for PDF output out of 10000 (max. 10000000)
+

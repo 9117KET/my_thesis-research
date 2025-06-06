@@ -5,7 +5,7 @@
 \section{Evaluation Methodology}
 \label{sec:eval-methodology}
 
-This chapter presents a comprehensive evaluation of the ontology-enhanced LLM system, focusing on both quantitative metrics and qualitative analysis. Our evaluation methodology follows established practices in educational technology assessment~\cite{wilson2024educational} and LLM evaluation frameworks~\cite{huang2024survey,chen2024comparing}. The primary goal is to quantitatively measure how the ontology-based approach reduces hallucination rates in physics education content, providing statistical evidence of its effectiveness compared to baseline large language models.
+This chapter presents a comprehensive evaluation of the ontology-enhanced LLM system, focusing on both quantitative metrics and qualitative analysis. Our evaluation methodology follows established practices in educational technology assessment and LLM evaluation frameworks~\cite{chen2024comparing}. The primary goal is to quantitatively measure how the ontology-based approach reduces hallucination rates in physics education content, providing statistical evidence of its effectiveness compared to baseline large language models.
 
 \section{Experimental Setup}
 \label{sec:experimental-setup}
@@ -30,8 +30,8 @@ We implemented a modular evaluation framework specifically designed to assess ha
 
 \subsection{Evaluation Metrics}
 \begin{itemize}
-    \item \textbf{Response Accuracy:} Measured against domain expert validation~\cite{chen2024comparing}
-    \item \textbf{Hallucination Rate:} Frequency of factually incorrect statements~\cite{huang2024survey}
+    \item \textbf{Response Accuracy:} Measured against domain expert validation
+    \item \textbf{Hallucination Rate:} Frequency of factually incorrect statements
     \item \textbf{Effect Size:} Cohen's d measurement of practical significance
     \item \textbf{Statistical Significance:} p-value for comparing baseline and ontology-enhanced models
 \end{itemize}
@@ -212,11 +212,6 @@ Our analysis of exemplary cases from the evaluation revealed an unexpected but s
     \item \textbf{Education Implications:} This trade-off suggests that ontology constraints may be better suited for explanation generation than for multiple-choice answer selection in educational contexts
 \end{itemize}
 
-\section{Discussion}
-\label{sec:discussion}
-
-The evaluation results can be interpreted in the context of broader educational technology research~\cite{wilson2024educational} and recent advances in AI tutoring systems~\cite{rivera2024impact}:
-
 \subsection{Key Findings}
 \begin{itemize}
     \item \textbf{Substantial Hallucination Reduction:} The ontology-enhanced approach reduced hallucinations by 75\% compared to the baseline model (26.67\% to 6.67\%), demonstrating the effectiveness of structured knowledge integration with LLMs for improving factual reliability.
@@ -226,11 +221,13 @@ The evaluation results can be interpreted in the context of broader educational 
     \item \textbf{Accuracy-Hallucination Trade-off:} An unexpected finding was the inverse relationship between hallucination reduction and answer accuracy, with the ontology-enhanced model showing lower accuracy (46.67\%) compared to the baseline model (86.67\%).
     
     \item \textbf{Explanation Quality:} While accuracy in answer selection decreased, qualitative analysis of explanations showed improved alignment with physics principles and elimination of common misconceptions.
+
+    \item \textbf{Disclaimer:} While we have an accuracy and hallucination score, it is by no means implying this system will always generate this precise value because its outcome largely depends on prompt, constraints and the type of questions  
 \end{itemize}
 
 \subsection{Implications for STEM Education}
 \begin{itemize}
-    \item \textbf{Pedagogical Value:} Despite the accuracy trade-off, the reduced hallucination rate may have greater pedagogical value in educational contexts where exposing students to misconceptions can be harmful~\cite{rivera2024impact}.
+    \item \textbf{Pedagogical Value:} Despite the accuracy trade-off, the reduced hallucination rate may have greater pedagogical value in educational contexts where exposing students to misconceptions can be harmful.
     
     \item \textbf{Targeted Application:} The findings suggest that ontology-enhanced LLMs may be better suited for generating explanations and educational content rather than for assessment purposes.
     
@@ -248,17 +245,6 @@ The evaluation results can be interpreted in the context of broader educational 
     \item \textbf{Constraint Tuning:} The significant accuracy drop indicates that the ontology constraints may have been overly restrictive, suggesting the need for more nuanced application of knowledge constraints.
 \end{itemize}
 
-\subsection{Methodological Considerations}
-The evaluation methodology employed in this study builds upon established frameworks for educational technology assessment~\cite{wilson2024educational} and LLM evaluation~\cite{chen2024comparing}. Key methodological considerations include:
-
-\begin{itemize}
-    \item \textbf{Expert Validation:} The use of domain experts to validate responses and identify hallucinations provides a robust foundation for assessment.
-    
-    \item \textbf{Mixed-Methods Approach:} Combining quantitative metrics with qualitative case studies offers a more complete understanding of system performance.
-    
-    \item \textbf{Statistical Analysis:} While the p-value (0.082) falls just short of conventional statistical significance, the medium effect size (Cohen's d = 0.528) suggests practical significance that warrants further investigation.
-\end{itemize}
-
 \section{Summary}
 \label{sec:summary}
 
@@ -269,11 +255,11 @@ Key findings include:
     \item A 75\% reduction in hallucination rates compared to the baseline model (from 26.67\% to 6.67\%)
     \item Medium effect size (Cohen's d = 0.528), indicating moderate practical significance
     \item An unexpected trade-off between hallucination reduction and answer accuracy
-    \item Improved factual reliability and explanation quality despite reduced accuracy
+    \item Improved factual reliability and explanation quality despite reduced accuracy for multiple choice questions
 \end{itemize}
 
 The evaluation results reveal both the promise and challenges of ontology-enhanced approaches for improving the reliability of AI tutoring systems in STEM education. The substantial reduction in hallucinations demonstrates the value of structured knowledge integration, while the accuracy trade-off highlights the complexity of constraining LLM outputs without compromising performance across all metrics.
 
-These findings suggest that ontology-enhanced LLMs may be most effective when deployed for specific educational purposes such as generating explanations and educational content, rather than for assessment or question-answering tasks. This distinction has important implications for the design and implementation of AI tutoring systems in educational contexts~\cite{rivera2024impact}.
+These findings suggest that ontology-enhanced LLMs may be most effective when deployed for specific educational purposes such as generating explanations and educational content, rather than for assessment or question-answering tasks (except explicitly commanded to use a specific question set alongside the corresponding answers). This distinction has important implications for the design and implementation of AI tutoring systems in educational contexts.
 
 The next chapter will discuss the broader implications of these findings and directions for future research and development, including strategies for balancing the accuracy-hallucination trade-off and optimizing ontology constraints for educational applications.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.3)  12 MAY 2025 13:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.3)  19 MAY 2025 20:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1037,11 +1037,7 @@ LaTeX Font Info:    Trying to load font information for OT1+phv on input line 7
 .
  (C:\Users\kinlo\latex\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
-) (main.aux
-
-LaTeX Warning: Label `sec:system-architecture' multiply defined.
-
-)
+) (main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -1109,22 +1105,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (main.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                liu2024ontology
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                wang2024adaptive
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+ (main.bbl)
 Package biblatex Info: Reference section=0 on input line 7.
 Package biblatex Info: Reference segment=0 on input line 7.
 Package caption Info: Begin \AtBeginDocument code.
@@ -1132,7 +1113,8 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
- (C:\Users\kinlo\latex\tex/context/base/mkii\supp-pdf.mkii
+
+(C:\Users\kinlo\latex\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count474
 \scratchdimen=\dimen302
@@ -1165,6 +1147,11 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 \c@lstlisting=\count480
 
 (chapters/00_titlepage.tex
+<figures/bsc-logo.png, id=346, 195.06209pt x 41.15375pt>
+File: figures/bsc-logo.png Graphic file (type png)
+<use figures/bsc-logo.png>
+Package pdftex.def Info: figures/bsc-logo.png  used on input line 6.
+(pdftex.def)             Requested size: 170.71393pt x 36.01947pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 34.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -1174,9 +1161,9 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {C:/Users/kinlo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/kinl
-o/latex/fonts/enc/dvips/base/8r.enc}])
-(chapters/00_declaration.tex [2]) (chapters/00_abstract.tex [3]) (main.toc
-[4
+o/latex/fonts/enc/dvips/base/8r.enc} <./figures/bsc-logo.png>]) (chapters/00_de
+claration.tex [2]) (chapters/00_abstract.tex
+[3]) (main.toc [4
 
 
 ] [5])
@@ -1185,35 +1172,41 @@ o/latex/fonts/enc/dvips/base/8r.enc}])
 
  [6] (chapters/01_introduction.tex
 Chapter 1.
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
-9.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 2
+1.
 (C:\Users\kinlo\latex\tex/latex/psnfss\ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
-Overfull \hbox (9.14568pt too wide) in paragraph at lines 20--21
+Overfull \hbox (9.14568pt too wide) in paragraph at lines 22--23
 []\OT1/phv/m/n/10.95 Rule-based sys-tems of-fer ac-cu-racy but lack the nat-u-r
 al in-ter-ac-tion ca-pa-bil-i-ties needed
+ []
+
+
+Overfull \hbox (8.28503pt too wide) in paragraph at lines 24--25
+[]\OT1/phv/m/n/10.95 Fine-tuning LLMs is resource-intensive, time-consuming, an
+d re-quires do-main Knowl-
  []
 
 [1
 
 
 ]
-Overfull \hbox (0.57088pt too wide) in paragraph at lines 72--73
+Overfull \hbox (0.57088pt too wide) in paragraph at lines 77--78
 []\OT1/phv/b/n/10.95 LLM Ar-chi-tec-ture: \OT1/phv/m/n/10.95 Lat-est de-vel-op-
 ments in trans-former mod-els and at-ten-tion mech-
  []
 
 [2] [3]
-Overfull \hbox (13.93015pt too wide) in paragraph at lines 133--134
+Overfull \hbox (13.93015pt too wide) in paragraph at lines 138--139
 []\OT1/phv/m/n/10.95 Chapter [][]2[][] ex-am-ines the the-o-ret-i-cal foun-da-t
 ions and re-lated work in ontology-enhanced
  []
 
 ) (chapters/02_background.tex
-Overfull \hbox (54.48494pt too wide) in paragraph at lines 140--2
-\OT1/phv/m/n/10.95 demon-stra-tion of the sys-tem can be ac-cessed at [][]$\OT1
-/cmtt/m/n/10.95 https : / / ai-[]avatar-[]ontology-[]integration-[]poc .
+Overfull \hbox (8.86716pt too wide) in paragraph at lines 145--2
+\OT1/cmtt/m/n/10.95 github . com / 9117KET / ai-[]avatar-[]ontology-[]integrati
+on-[]poc . git$[][]\OT1/phv/m/n/10.95 . Fur-ther de-tails about
  []
 
 [4]
@@ -1237,7 +1230,7 @@ Overfull \hbox (70.29521pt too wide) in paragraph at lines 152--153
  []
 
 [7]
-<figures/diagrams/ExampleOntology.png, id=654, 1662.21pt x 879.285pt>
+<figures/diagrams/ExampleOntology.png, id=561, 1662.21pt x 879.285pt>
 File: figures/diagrams/ExampleOntology.png Graphic file (type png)
 <use figures/diagrams/ExampleOntology.png>
 Package pdftex.def Info: figures/diagrams/ExampleOntology.png  used on input li
@@ -1278,18 +1271,10 @@ ponses based on com-pre-hen-sive stu-dent mod-
 
 [13]) (chapters/04_implementation.tex [14]
 Chapter 4.
-
-LaTeX Warning: Citation 'wang2024adaptive' on page 15 undefined on input line 6
-.
-
-
-LaTeX Warning: Citation 'liu2024ontology' on page 15 undefined on input line 11
-.
-
 [15
 
 ]
-Overfull \hbox (1.02238pt too wide) in paragraph at lines 50--51
+Overfull \hbox (1.02238pt too wide) in paragraph at lines 51--52
 \OT1/phv/m/n/10.95 The physics tu-tor-ing on-tol-ogy was im-ple-mented in OWL/R
 DF for-mat, defin-ing key classes,
  []
@@ -1301,51 +1286,28 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 52.
+nput line 53.
  [16]
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-105.
+106.
 
 (C:\Users\kinlo\latex\tex/latex/base\ts1cmtt.fd
 File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [17]
 (C:\Users\kinlo\latex\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
-) [18]
-
-LaTeX Warning: Citation 'wang2024adaptive' on page 19 undefined on input line 2
-34.
-
-[19] [20]
-Overfull \hbox (26.80777pt too wide) in paragraph at lines 321--322
+) [18] [19] [20]
+Overfull \hbox (26.80777pt too wide) in paragraph at lines 314--315
 [][][][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
 
 [21] [22] [23] [24] [25]
-
-LaTeX Warning: Citation 'liu2024ontology' on page 26 undefined on input line 56
-4.
-
-
-Overfull \hbox (1.35071pt too wide) in paragraph at lines 564--565
-\OT1/phv/m/n/10.95 tem, en-sur-ing both tech-ni-cal ex-cel-lence and ed-u-ca-ti
-onal ef-fec-tive-ness [[]].
+Overfull \hbox (37.87352pt too wide) in paragraph at lines 578--579
+[]\OT1/phv/m/n/10.95 Link to the repos-i-tory: [][]$\OT1/cmtt/m/n/10.95 https :
+ / / github . com / 9117KET / ai-[]avatar-[]ontology-[]integration-[]poc .
  []
 
-[26]
-Overfull \hbox (107.08716pt too wide) in paragraph at lines 631--632
-\OT1/phv/m/n/10.95 A fully func-tional demon-stra-tion of the sys-tem is avail-
-able at [][]$\OT1/cmtt/m/n/10.95 https : / / ai-[]avatar-[]ontology-[]integrati
-on-[]poc .
- []
-
-[27]) (chapters/05_evaluation.tex
-Overfull \hbox (0.91292pt too wide) in paragraph at lines 656--2
-\OT1/phv/m/n/10.95 while main-tain-ing low re-sponse la-tency, which is crit-i-
-cal for ed-u-ca-tional ap-pli-ca-tions where
- []
-
-[28]
+) (chapters/05_evaluation.tex [26]
 Chapter 5.
 
 Overfull \hbox (3.93446pt too wide) in paragraph at lines 8--9
@@ -1353,7 +1315,7 @@ Overfull \hbox (3.93446pt too wide) in paragraph at lines 8--9
 ta-tive anal-y-sis. Our eval-u-a-tion method-
  []
 
-[29
+[27
 
 ] (C:\Users\kinlo\latex\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
@@ -1389,9 +1351,9 @@ l.72 ...ting}[language=json, basicstyle=\ttfamily]
 The language is not loadable. Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[30]
-<figures/screenshots/claude_base_line_model.png, id=1073, 613.54219pt x 603.002
-8pt>
+[28]
+<figures/screenshots/claude_base_line_model.png, id=924, 613.54219pt x 603.0028
+pt>
 File: figures/screenshots/claude_base_line_model.png Graphic file (type png)
 <use figures/screenshots/claude_base_line_model.png>
 Package pdftex.def Info: figures/screenshots/claude_base_line_model.png  used o
@@ -1402,9 +1364,9 @@ Overfull \hbox (51.46509pt too wide) in paragraph at lines 92--93
 [][] 
  []
 
-[31]
-<figures/screenshots/ontology_enhance_model.png, id=1089, 679.03688pt x 694.845
-93pt>
+[29]
+<figures/screenshots/ontology_enhance_model.png, id=939, 679.03688pt x 694.8459
+3pt>
 File: figures/screenshots/ontology_enhance_model.png Graphic file (type png)
 <use figures/screenshots/ontology_enhance_model.png>
 Package pdftex.def Info: figures/screenshots/ontology_enhance_model.png  used o
@@ -1415,13 +1377,13 @@ Overfull \hbox (51.46509pt too wide) in paragraph at lines 97--98
 [][] 
  []
 
-[32 <./figures/screenshots/claude_base_line_model.png>]
+[30 <./figures/screenshots/claude_base_line_model.png>]
 Overfull \hbox (12.156pt too wide) in paragraph at lines 105--106
 \OT1/phv/m/n/10.95 Our eval-u-a-tion re-vealed a sub-stan-tial im-prove-ment in
  hal-lu-ci-na-tion re-duc-tion in the ontology-
  []
 
-<../figures/model_comparison.png, id=1095, 1075.3776pt x 424.9476pt>
+<../figures/model_comparison.png, id=945, 1075.3776pt x 424.9476pt>
 File: ../figures/model_comparison.png Graphic file (type png)
 <use ../figures/model_comparison.png>
 Package pdftex.def Info: ../figures/model_comparison.png  used on input line 12
@@ -1436,50 +1398,30 @@ e and ontology-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[33 <./figures/screenshots/ontology_enhance_model.png>] [34 <../figures/model_c
-omparison.png>] [35] [36] [37]
-Overfull \hbox (2.60732pt too wide) in paragraph at lines 269--270
+[31 <./figures/screenshots/ontology_enhance_model.png>] [32 <../figures/model_c
+omparison.png>] [33] [34]
+Overfull \hbox (2.60732pt too wide) in paragraph at lines 255--256
 []\OT1/phv/m/n/10.95 A 75% re-duc-tion in hal-lu-ci-na-tion rates com-pared to 
 the base-line model (from 26.67%
  []
 
-) (chapters/06_conclusion.tex [38]
+[35]) (chapters/06_conclusion.tex [36]
 Chapter 6.
+[37
 
-LaTeX Warning: Citation 'liu2024ontology' on page 39 undefined on input line 23
-.
-
-
-LaTeX Warning: Citation 'wang2024adaptive' on page 39 undefined on input line 2
-5.
-
-
-Overfull \hbox (1.23969pt too wide) in paragraph at lines 30--31
-[]\OT1/phv/b/n/10.95 Enhanced Learn-ing: \OT1/phv/m/n/10.95 Demon-strated im-pr
-ove-ment in stu-dent un-der-stand-ing of com-
- []
-
-[39
-
-] [40]
-Overfull \hbox (21.88023pt too wide) in paragraph at lines 93--94
+]
+Overfull \hbox (21.88023pt too wide) in paragraph at lines 52--53
 []\OT1/phv/b/n/10.95 Context-Dependent Per-for-mance: \OT1/phv/m/n/10.95 Ex-am-
 ples demon-strate that the ontology-enhanced
  []
 
-
-Overfull \hbox (3.51988pt too wide) in paragraph at lines 123--124
+[38]
+Overfull \hbox (3.51988pt too wide) in paragraph at lines 83--84
 \OT1/phv/m/n/10.95 tions de-creased by 75%, an-swer ac-cu-racy also de-creased 
 sig-nif-i-cantly (from 86.67%
  []
 
-[41]
-Overfull \hbox (17.36752pt too wide) in paragraph at lines 137--138
-\OT1/phv/m/n/10.95 Based on re-cent de-vel-op-ments in ed-u-ca-tional AI re-sea
-rch [[][][]24[][]] and the accuracy-hallucination
- []
-
-[42]) [43]
+[39]) [40]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 30.
 
@@ -1502,44 +1444,43 @@ Overfull \hbox (8.34557pt too wide) in paragraph at lines 30--30
 []
  []
 
-[44
+
+Overfull \hbox (20.78705pt too wide) in paragraph at lines 30--30
+\OT1/phv/m/sl/10.95 Ed-u-ca-tional Tech-nol-ogy Re-search \OT1/phv/m/n/10.95 12
+.3 (2024). \OT1/phv/m/sc/10.95 url\OT1/phv/m/n/10.95 : [][]$\OT1/cmtt/m/n/10.95
+ https : / / pdfs . semanticscholar .
+ []
+
+[41
 
 
-] [45] (chapters/A1_appendix.tex [46]
-Appendix A.
-[47
-
-] [48]) [49] (main.aux)
+] [42] [43] (main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F3B451FA5A8ACC9D1A5AA2E145F7F56A;21154.
+(rerunfilecheck)             Checksum: CB97817C472595B567A2132B63333FD9;16987.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39048 strings out of 474479
- 791798 string characters out of 5754848
+ 38948 strings out of 474479
+ 790228 string characters out of 5754848
  2100542 words of memory out of 5000000
- 60237 multiletter control sequences out of 15000+600000
+ 60203 multiletter control sequences out of 15000+600000
  589642 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,10n,96p,762b,2290s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,10n,96p,679b,2290s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\kinlo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tctt
 1000.pk><C:/Users/kinlo/latex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Use
 rs/kinlo/latex/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/kinlo/latex/
 fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/kinlo/latex/fonts/type1/urw/helve
 tic/uhvr8a.pfb><C:/Users/kinlo/latex/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (55 pages, 796361 bytes).
+Output written on main.pdf (49 pages, 760437 bytes).
 PDF statistics:
- 1472 PDF objects out of 1728 (max. 8388607)
- 516 named destinations out of 1000 (max. 500000)
- 873 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1238 PDF objects out of 1440 (max. 8388607)
+ 453 named destinations out of 1000 (max. 500000)
+ 718 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,10 +1,10 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Research Objectives}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.1}Research Objectives}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Research Contributions}{2}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Technical Foundations}{2}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Research Challenges}{2}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Conceptual Challenges}{2}{subsection.1.4.1}%
+\contentsline {section}{\numberline {1.4}Research Challenges}{3}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Conceptual Challenges}{3}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {1.4.2}Technical Challenges}{3}{subsection.1.4.2}%
 \contentsline {subsection}{\numberline {1.4.3}Mitigation Strategies for Hallucination}{3}{subsection.1.4.3}%
 \contentsline {section}{\numberline {1.5}Thesis Structure}{4}{section.1.5}%
@@ -45,62 +45,42 @@
 \contentsline {section}{\numberline {4.6}Integration Challenges}{22}{section.4.6}%
 \contentsline {section}{\numberline {4.7}LLM Integration}{23}{section.4.7}%
 \contentsline {section}{\numberline {4.8}Educational Technology Integration}{24}{section.4.8}%
-\contentsline {subsection}{\numberline {4.8.1}Learning Path Generation}{25}{subsection.4.8.1}%
-\contentsline {section}{\numberline {4.9}Quality Assurance}{25}{section.4.9}%
-\contentsline {section}{\numberline {4.10}Source Code and Live Demonstration}{26}{section.4.10}%
-\contentsline {subsection}{\numberline {4.10.1}Repository Structure}{26}{subsection.4.10.1}%
-\contentsline {subsection}{\numberline {4.10.2}Live Demonstration}{27}{subsection.4.10.2}%
-\contentsline {subsection}{\numberline {4.10.3}Deployment Architecture}{27}{subsection.4.10.3}%
-\contentsline {chapter}{\numberline {5}Evaluation}{29}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Evaluation Methodology}{29}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Experimental Setup}{29}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Evaluation Framework}{29}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Test Environment}{29}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Evaluation Metrics}{30}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}Evaluation Methodology}{30}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Testing Approach}{30}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Response Quality Comparison}{30}{subsection.5.3.2}%
-\contentsline {section}{\numberline {5.4}Quantitative Results}{33}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Hallucination Reduction}{33}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Effect Size Analysis}{34}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Accuracy-Hallucination Trade-off}{34}{subsection.5.4.3}%
-\contentsline {subsection}{\numberline {5.4.4}Learning Outcomes}{34}{subsection.5.4.4}%
-\contentsline {section}{\numberline {5.5}Case Studies}{35}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Complex Physics Concepts}{35}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}Misconception Correction}{35}{subsection.5.5.2}%
-\contentsline {subsection}{\numberline {5.5.3}Accuracy-Hallucination Trade-off Analysis}{36}{subsection.5.5.3}%
-\contentsline {section}{\numberline {5.6}Discussion}{36}{section.5.6}%
-\contentsline {subsection}{\numberline {5.6.1}Key Findings}{36}{subsection.5.6.1}%
-\contentsline {subsection}{\numberline {5.6.2}Implications for STEM Education}{37}{subsection.5.6.2}%
-\contentsline {subsection}{\numberline {5.6.3}Limitations}{37}{subsection.5.6.3}%
-\contentsline {subsection}{\numberline {5.6.4}Methodological Considerations}{37}{subsection.5.6.4}%
-\contentsline {section}{\numberline {5.7}Summary}{38}{section.5.7}%
-\contentsline {chapter}{\numberline {6}Conclusion}{39}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Research Overview}{39}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Summary of Contributions}{39}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Technical Contributions}{39}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Educational Contributions}{39}{subsection.6.2.2}%
-\contentsline {section}{\numberline {6.3}Comparative Evaluation}{40}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Methodology}{40}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Comparative Results}{40}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}Key Findings}{40}{subsection.6.3.3}%
-\contentsline {section}{\numberline {6.4}Impact and Implications}{41}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Educational Technology}{41}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.4.2}AI Development}{41}{subsection.6.4.2}%
-\contentsline {section}{\numberline {6.5}Limitations and Challenges}{41}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Future Research Directions}{42}{section.6.6}%
-\contentsline {subsection}{\numberline {6.6.1}Technical Advancements}{42}{subsection.6.6.1}%
-\contentsline {subsection}{\numberline {6.6.2}Educational Enhancements}{42}{subsection.6.6.2}%
-\contentsline {section}{\numberline {6.7}Concluding Remarks}{43}{section.6.7}%
-\contentsline {chapter}{Bibliography}{44}{chapter*.15}%
-\contentsline {chapter}{\numberline {A}Technical Supplementary Materials}{47}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Ontology Structure Details}{47}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Core Physics Concepts Hierarchy}{47}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}Relationship Types}{47}{subsection.A.1.2}%
-\contentsline {section}{\numberline {A.2}System Architecture Details}{48}{section.A.2}%
-\contentsline {subsection}{\numberline {A.2.1}Component Specifications}{48}{subsection.A.2.1}%
-\contentsline {section}{\numberline {A.3}Future Extensions}{48}{section.A.3}%
-\contentsline {subsection}{\numberline {A.3.1}Planned Features}{48}{subsection.A.3.1}%
-\contentsline {section}{\numberline {A.4}Related Research Articles}{49}{section.A.4}%
-\contentsline {subsection}{\numberline {A.4.1}AI in Education and Learning Analytics}{49}{subsection.A.4.1}%
-\contentsline {subsection}{\numberline {A.4.2}Technical Terminology Glossary}{49}{subsection.A.4.2}%
+\contentsline {section}{\numberline {4.9}Quality Assurance}{24}{section.4.9}%
+\contentsline {section}{\numberline {4.10}Source Code and Live Demonstration}{25}{section.4.10}%
+\contentsline {subsection}{\numberline {4.10.1}Repository Structure}{25}{subsection.4.10.1}%
+\contentsline {chapter}{\numberline {5}Evaluation}{27}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Evaluation Methodology}{27}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Experimental Setup}{27}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Evaluation Framework}{27}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Test Environment}{27}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Evaluation Metrics}{28}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Evaluation Methodology}{28}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Testing Approach}{28}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Response Quality Comparison}{28}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Quantitative Results}{31}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Hallucination Reduction}{31}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Effect Size Analysis}{32}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Accuracy-Hallucination Trade-off}{32}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}Learning Outcomes}{32}{subsection.5.4.4}%
+\contentsline {section}{\numberline {5.5}Case Studies}{33}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Complex Physics Concepts}{33}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Misconception Correction}{33}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.3}Accuracy-Hallucination Trade-off Analysis}{34}{subsection.5.5.3}%
+\contentsline {subsection}{\numberline {5.5.4}Key Findings}{34}{subsection.5.5.4}%
+\contentsline {subsection}{\numberline {5.5.5}Implications for STEM Education}{35}{subsection.5.5.5}%
+\contentsline {subsection}{\numberline {5.5.6}Limitations}{35}{subsection.5.5.6}%
+\contentsline {section}{\numberline {5.6}Summary}{35}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Conclusion}{37}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Research Overview}{37}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Summary of Contributions}{37}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Technical and Educational Contributions}{37}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Methodology}{37}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Key Findings}{38}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}Impact and Implications}{38}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Educational Technology}{38}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}AI Development}{38}{subsection.6.3.2}%
+\contentsline {section}{\numberline {6.4}Limitations and Challenges}{39}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Future Research Directions}{39}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Technical Advancements}{39}{subsection.6.5.1}%
+\contentsline {section}{\numberline {6.6}Concluding Remarks}{40}{section.6.6}%
+\contentsline {chapter}{Bibliography}{41}{chapter*.12}%
